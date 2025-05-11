@@ -1,5 +1,9 @@
 @import url(font-aeo-pro.css);
 
+body, h1, p {
+  font-family: sans-serif;
+}
+
 .aeo-pro {
   font-family: 'aeo-pro', sans-serif;
 }
