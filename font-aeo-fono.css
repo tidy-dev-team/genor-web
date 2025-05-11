@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "aeo-fono";
+    src: url("fonts/Aeonik/Aeonik_Mono/OTF/AeonikFono-Air.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "aeo-fono";
+    src: url("fonts/Aeonik/Aeonik_Mono/OTF/AeonikFono-Light.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "aeo-fono";
+    src: url("fonts/Aeonik/Aeonik_Mono/OTF/AeonikFono-Thin.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "aeo-fono";
+    src: url("fonts/Aeonik/Aeonik_Mono/OTF/AeonikFono-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "aeo-fono";
+    src: url("fonts/Aeonik/Aeonik_Mono/OTF/AeonikFono-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "aeo-fono";
+    src: url("fonts/Aeonik/Aeonik_Mono/OTF/AeonikFono-Bold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "aeo-fono";
+    src: url("fonts/Aeonik/Aeonik_Mono/OTF/AeonikFono-Black.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
