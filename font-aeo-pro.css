@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "aeo-pro";
-    src: url("fonts/Aeonik/Aeonik_Pro/OTF/AeonikPro-Light.otf") format("opentype");
+    src: url("fonts/Aeonik/Aeonik_Pro/OTF/AeonikPro-Thin.otf") format("opentype");
     font-weight: 200;
     font-style: normal;
     font-display: block;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "aeo-pro";
-    src: url("fonts/Aeonik/Aeonik_Pro/OTF/AeonikPro-Thin.otf") format("opentype");
+    src: url("fonts/Aeonik/Aeonik_Pro/OTF/AeonikPro-Light.otf") format("opentype");
     font-weight: 300;
     font-style: normal;
     font-display: block;
