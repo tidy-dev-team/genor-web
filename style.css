@@ -8,13 +8,17 @@
 section {
     width: 100%;
     min-height: 100vh;
+    padding: 300px 0;
     height: fit-content;
+    box-sizing: border-box;
 }
 
 section:nth-of-type(2n) {
-    background-color: skyblue;
+    background-color: #eeeeee;
 }
 
 section {
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
 }
