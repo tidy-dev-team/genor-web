@@ -53,6 +53,7 @@ h6 {
 }
 
 .content {
+    position: relative;
     width: 80vw;
     padding: 0 10vw;
 }
@@ -85,6 +86,7 @@ p {
 }
 
 .collapse {
+    position: sticky;
     margin-left: 40px;
 }
 
