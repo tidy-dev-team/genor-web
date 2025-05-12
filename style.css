@@ -24,7 +24,7 @@ section:nth-of-type(2n) {
 section {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    gap: 14px;
     background-color: #ffffff;
 }
 
@@ -35,4 +35,20 @@ canvas {
 .black {
     background-color: #191919;
     color: #ffffff;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 64px;
+    max-width: 640px;
+}
+
+h1,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
