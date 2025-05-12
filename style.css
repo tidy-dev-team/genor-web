@@ -33,14 +33,15 @@ canvas {
     max-width: 100vw;
 }
 
-.black {
+section.black {
     background-color: #191919;
     color: #ffffff;
 }
 
 h1 {
     font-size: 64px;
-    max-width: 640px;
+    max-width: 1000px;
+    text-wrap: balance;
     font-family: 'aeo-fono', sans-serif;
     font-weight: 400;
 }
