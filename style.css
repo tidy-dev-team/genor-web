@@ -53,8 +53,8 @@ h6 {
 }
 
 .content {
-    width: 1200px;
-    max-width: 80vw;
+    width: 80vw;
+    padding: 0 10vw;
 }
 
 h3 {
