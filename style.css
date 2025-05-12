@@ -26,6 +26,7 @@ section {
     align-items: center;
     gap: 14px;
     background-color: #ffffff;
+    color: #333333;
 }
 
 canvas {
