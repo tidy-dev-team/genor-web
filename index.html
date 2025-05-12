@@ -36,12 +36,10 @@
     <script>
         const r = new rive.Rive({
             src: "anim/star-anim.riv",
-            // OR the path to a discoverable and public Rive asset
-            // src: '/public/example.riv',
             canvas: document.getElementById("canvas"),
             autoplay: true,
-            // artboard: "Arboard", // Optional. If not supplied the default is selected
-            stateMachines: "Timeline 1",
+            // artboard: "Arboard",
+            // stateMachines: "Timeline 1",
             onLoad: () => {
                 r.resizeDrawingSurfaceToCanvas();
             },
