@@ -83,7 +83,11 @@ p {
     color: #929292;
     max-width: 405px;
 }
-.collapse{}
+
+.collapse {
+    margin-left: 40px;
+}
+
 .collapse h3::before {
     content: '';
     position: absolute;
@@ -93,6 +97,7 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    transform: translateX(-40px);
 }
 
 /*
