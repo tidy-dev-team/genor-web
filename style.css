@@ -56,6 +56,12 @@ h6 {
     position: relative;
     width: 80vw;
     padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 400px;
+    height: 400px;
+    background-color: rebeccapurple;
+    overflow: auto;
 }
 
 h3 {
@@ -87,6 +93,7 @@ p {
 
 .collapse {
     position: sticky;
+    top: 0;
     margin-left: 40px;
 }
 
