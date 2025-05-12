@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genor Website</title>
     <link rel="stylesheet" href="style.css">
-    
+
     <script src="https://unpkg.com/@rive-app/canvas"></script>
     <script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
 </head>
@@ -15,6 +15,7 @@
     <div id="wrapper">
         <section>
             <h1>1</h1>
+            <br /><br />
             <canvas id="canvas" width="800" height="600"></canvas>
         </section>
         <section>
@@ -35,19 +36,19 @@
     </div>
 
     <script>
-    const r = new rive.Rive({
-        src: "anim/star-anim.riv",
-        // OR the path to a discoverable and public Rive asset
-        // src: '/public/example.riv',
-        canvas: document.getElementById("canvas"),
-        autoplay: true,
-        // artboard: "Arboard", // Optional. If not supplied the default is selected
-        stateMachines: "Timeline 1",
-        onLoad: () => {
-          r.resizeDrawingSurfaceToCanvas();
-        },
-    });
-</script>
+        const r = new rive.Rive({
+            src: "anim/star-anim.riv",
+            // OR the path to a discoverable and public Rive asset
+            // src: '/public/example.riv',
+            canvas: document.getElementById("canvas"),
+            autoplay: true,
+            // artboard: "Arboard", // Optional. If not supplied the default is selected
+            stateMachines: "Timeline 1",
+            onLoad: () => {
+                r.resizeDrawingSurfaceToCanvas();
+            },
+        });
+    </script>
 
 </body>
 
