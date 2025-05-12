@@ -38,13 +38,17 @@ canvas {
     color: #ffffff;
 }
 
-h6 {
-    font-size: 12px;
-}
-
 h1 {
     font-size: 64px;
     max-width: 640px;
+    font-family: 'aeo-fono', sans-serif;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 12px;
+    font-family: 'aeo-mono', sans-serif;
+    font-weight: 500;
 }
 
 h1,
@@ -52,4 +56,10 @@ h6 {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 100px 0;
+    }
 }
