@@ -83,7 +83,21 @@ p {
     color: #929292;
     max-width: 405px;
 }
+.collapse{}
+.collapse h3::before {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 22px;
+    background-image: url('data:image/svg+xml, <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.2411 10.807L0 21.0225L3.79151 10.8113L0.0136179 0.54715L10.2411 10.807Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 
+/*
+<svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.2411 10.807L0 21.0225L3.79151 10.8113L0.0136179 0.54715L10.2411 10.807Z" fill="white"/></svg>
+ */
 h1,
 h3,
 h6 {
