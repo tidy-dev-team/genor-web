@@ -141,6 +141,10 @@ h6 {
     text-align: center;
 }
 
+.all-caps {
+    text-transform: uppercase;
+}
+
 @media only screen and (max-width: 600px) {
     section {
         padding: 100px 0;
