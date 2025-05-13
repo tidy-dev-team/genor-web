@@ -148,5 +148,15 @@ h6 {
 
     h1 {
         font-size: 32px;
+        max-width: 80vw;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        max-width: 80vw;
+    }
+
+    .content {
+        gap: 16px;
     }
 }
