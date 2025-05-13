@@ -58,8 +58,8 @@ h6 {
     padding: 0 10vw;
     display: flex;
     flex-direction: column;
-    gap: 400px;
-    height: 400px;
+    gap: 600px;
+    height: 600px;
     background-color: rebeccapurple;
     overflow: auto;
 }
