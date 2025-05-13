@@ -145,4 +145,8 @@ h6 {
     section {
         padding: 100px 0;
     }
+
+    h1 {
+        font-size: 32px;
+    }
 }
