@@ -8,6 +8,6 @@ function scrollEnd(e) {
             x[i].style.padding = "0";
         }
         e.target.style.height = "fit-content";
-        e.target.style.gap = "0";
+        e.target.style.gap = "16px";
     }
 }
