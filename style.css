@@ -145,6 +145,24 @@ h6 {
     text-transform: uppercase;
 }
 
+button,
+a {
+    cursor: pointer;
+    transition: filter 200ms linear 0s;
+}
+
+button:hover {
+    filter: brightness(96%);
+}
+
+button:active {
+    transform: scale(.99);
+}
+
+a:hover {
+    filter: brightness(200%);
+}
+
 @media only screen and (max-width: 600px) {
     section {
         padding: 100px 0;
@@ -162,5 +180,9 @@ h6 {
 
     .content {
         gap: 16px;
+    }
+
+    button {
+        font-size: 14px;
     }
 }
