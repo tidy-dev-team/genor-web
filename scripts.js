@@ -1,5 +1,4 @@
 function scrollEnd(e) {
-    // console.log(e.target.scrollTop + " / " + e.target.scrollHeight);
     if (e.target.scrollHeight - e.target.scrollTop < 1000) {
         console.log("done");
         var x = e.target.querySelectorAll(".collapse");
