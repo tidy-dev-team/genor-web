@@ -97,6 +97,18 @@ p {
     margin-left: 40px;
 }
 
+.collapse:nth-of-type(2) {
+    top: 150px;
+}
+
+.collapse:nth-of-type(3) {
+    top: 300px;
+}
+
+.collapse:nth-of-type(4) {
+    top: 450px;
+}
+
 .collapse h3::before {
     content: '';
     position: absolute;
