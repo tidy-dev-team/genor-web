@@ -58,8 +58,8 @@ h6 {
     padding: 0 10vw;
     display: flex;
     flex-direction: column;
-    gap: 570px;
-    height: 570px;
+    gap: 100vh;
+    height: 100vh;
     /* background-color: rebeccapurple; */
     overflow: auto;
 }
@@ -102,11 +102,12 @@ p {
 }
 
 .collapse:nth-of-type(3) {
-    top: 300px;
+    top: 275px;
 }
 
 .collapse:nth-of-type(4) {
-    top: 450px;
+    top: 350px;
+    padding-bottom: calc(100vh - 500px);
 }
 
 .collapse h3::before {
