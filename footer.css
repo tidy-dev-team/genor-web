@@ -1,0 +1,6 @@
+footer {
+    position: absolute;
+    border-radius: 10px;
+    background: #333;
+    backdrop-filter: blur(20px);
+}
