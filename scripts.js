@@ -7,7 +7,6 @@ function scrollEnd(e) {
         for (i = 0; i < x.length; i++) {
             x[i].style.padding = "0";
         }
-        e.target.style.height = "fit-content";
         e.target.style.gap = "16px";
     }
 }
