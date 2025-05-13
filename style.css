@@ -10,7 +10,7 @@
 section {
     width: 100%;
     min-height: 100vh;
-    padding: 300px 0;
+    padding: 100px 0;
     height: fit-content;
     box-sizing: border-box;
     display: flex;
