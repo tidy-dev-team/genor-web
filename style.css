@@ -173,6 +173,7 @@ button {
 }
 
 a {
+    position: relative;
     cursor: pointer;
     transition: filter 200ms linear 0s;
 }
@@ -197,6 +198,22 @@ button:active {
 
 a:hover {
     filter: brightness(200%);
+}
+
+a:focus-visible {
+    outline: none;
+}
+
+a:focus-visible::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -8px;
+    top: -8px;
+    box-shadow: 0 0 0 3px #555320;
+    border-radius: 12px;
+    padding: 8px;
 }
 
 .tabs-wrapper {
