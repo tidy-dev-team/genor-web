@@ -234,6 +234,8 @@ a:focus-visible::after {
 }
 
 .tab:hover {
+    color: #ffffff;
+    background-color: transparent;
     opacity: 0.8;
 }
 
