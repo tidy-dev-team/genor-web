@@ -244,12 +244,25 @@ a:focus-visible::after {
     opacity: 0.8;
 }
 
+.grid::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 150vh;
+    top: 0;
+    left: 0;
+    background-image: url(images/grid-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
 .tab.active {
     color: #FF9900;
     pointer-events: none;
     border-color: transparent;
-    /* box-shadow: 0 0 0 1px red inset; */
-    /* background: linear-gradient(139deg, #FFF -1.57%, #F90 32.39%, #995C00 85.77%); */
     background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
             #FFF,
             #F90,
