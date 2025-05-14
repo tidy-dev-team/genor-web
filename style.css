@@ -310,4 +310,9 @@ a:focus-visible::after {
     button {
         font-size: 14px;
     }
+
+    .grid::after {
+        aspect-ratio: 1 / 2;
+        bottom: 0;
+    }
 }
