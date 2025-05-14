@@ -248,8 +248,8 @@ a:focus-visible::after {
     content: '';
     position: absolute;
     width: 100vw;
-    aspect-ratio: 1 / 0.7;
-    top: 0;
+    aspect-ratio: 1 / 1;
+    bottom: -30%;
     left: 0;
     background-image: url(images/grid-bg.png);
     background-repeat: no-repeat;
