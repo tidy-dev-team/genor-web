@@ -112,11 +112,11 @@ p {
 }
 
 .collapse:nth-of-type(2) {
-    top: 150px;
+    top: 120px;
 }
 
 .collapse:nth-of-type(3) {
-    top: 275px;
+    top: 232px;
 }
 
 .collapse:nth-of-type(4) {
