@@ -18,18 +18,6 @@ header {
     z-index: 9;
 }
 
-button {
-    border: none;
-    outline: none;
-    color: #555320;
-    background-color: #FFFB68;
-    padding: 14px 26px;
-    border-radius: 14px;
-    font-size: 18px;
-    font-family: 'aeo-pro';
-    font-weight: 500;
-}
-
 header a {
     text-decoration: none;
     color: #333333;
