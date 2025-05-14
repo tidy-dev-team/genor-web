@@ -178,8 +178,17 @@ a {
 }
 
 button:hover {
+    background-color: #3D3D3D;
+    color: #FFFB68;
+}
+
+button:active {
     background-color: #333333;
     color: #FFFB68;
+}
+
+button:focus-visible {
+    box-shadow: 0 0 0 3px #555320;
 }
 
 button:active {
