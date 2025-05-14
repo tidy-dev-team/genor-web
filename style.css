@@ -168,16 +168,18 @@ button {
     font-size: 18px;
     font-family: 'aeo-pro';
     font-weight: 500;
+    cursor: pointer;
+    transition: background-color 300ms linear 0s, color 300ms linear 0s;
 }
 
-button,
 a {
     cursor: pointer;
     transition: filter 200ms linear 0s;
 }
 
 button:hover {
-    filter: brightness(96%);
+    background-color: #333333;
+    color: #FFFB68;
 }
 
 button:active {
