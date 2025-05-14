@@ -212,6 +212,26 @@ a:hover {
 .tab.active {
     color: #FF9900;
     pointer-events: none;
+    border-color: transparent;
+    /* box-shadow: 0 0 0 1px red inset; */
+    /* background: linear-gradient(139deg, #FFF -1.57%, #F90 32.39%, #995C00 85.77%); */
+    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
+            #FFF,
+            #F90,
+            #995C00) border-box;
+    animation: 3s rotate linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
 @media only screen and (max-width: 600px) {
