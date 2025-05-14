@@ -145,6 +145,13 @@ h6 {
     text-transform: uppercase;
 }
 
+.move-beyond {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(images/move-beyond-bg.svg);
+}
+
 button,
 a {
     cursor: pointer;
@@ -166,6 +173,12 @@ a:hover {
 @media only screen and (max-width: 600px) {
     section {
         padding: 100px 0;
+    }
+
+    .move-beyond {
+        min-height: unset;
+        background-position: top center;
+        border-top: 10px solid #ffffff;
     }
 
     h1 {
