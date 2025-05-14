@@ -9,3 +9,13 @@ function scrollEnd(e) {
         e.target.style.gap = "16px";
     }
 }
+
+function tabFunc(e) {
+    var x = e.target.parentElement.querySelectorAll(".tab");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.remove('active');
+    }
+    e.target.classList.add('active');
+
+}
