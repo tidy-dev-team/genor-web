@@ -248,13 +248,14 @@ a:focus-visible::after {
     content: '';
     position: absolute;
     width: 100vw;
-    height: 150vh;
-    top: 0;
+    aspect-ratio: 1 / 1.5;
+    /* height: 150vh; */
+    top: 20%;
     left: 0;
     background-image: url(images/grid-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top center;
     z-index: 1;
     mix-blend-mode: multiply;
 }
