@@ -188,6 +188,12 @@ a:hover {
     filter: brightness(200%);
 }
 
+.tabs-wrapper {
+    display: flex;
+    gap: 10px;
+    user-select: none;
+}
+
 .tab {
     font-family: 'aeo-fono', sans-serif;
     font-weight: 400;
@@ -199,8 +205,13 @@ a:hover {
     border: 1px solid #474747;
 }
 
+.tab:hover {
+    opacity: 0.8;
+}
+
 .tab.active {
     color: #FF9900;
+    pointer-events: none;
 }
 
 @media only screen and (max-width: 600px) {
