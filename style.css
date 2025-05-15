@@ -29,6 +29,10 @@ section {
     color: #333333;
 }
 
+section:first-of-type {
+    min-height: calc(100vh - 80px);
+}
+
 .anchor-link {
     position: absolute;
     top: -40px;
