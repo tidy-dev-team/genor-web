@@ -357,6 +357,7 @@ a:focus-visible::after {
     width: 27%;
     white-space: pre;
     gap: 8px;
+    align-items: center;
 }
 
 .flex.wrap:has(input[type="checkbox"]) {
@@ -559,4 +560,47 @@ body:has(.popup.hide) #wrapper {
         aspect-ratio: 1 / 2;
         bottom: 0;
     }
+
+    .popup {
+        width: 100%;
+        max-width: unset;
+        height: 100%;
+        transform: none;
+        top: 0;
+        left: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border-radius: 0;
+        padding: 24px;
+    }
+
+    .close-button {
+        top: 0;
+        right: 0;
+        transform: scale(0.75);
+        filter: invert(100%);
+        background-color: transparent;
+    }
+
+    .popup h1 {
+        font-size: 28px;
+    }
+
+    .popup h1 br {
+        display: none;
+    }
+
+    .popup p {
+        font-size: 14px;
+    }
+
+    .popup h4,
+    .flex.wrap .flex:has(input[type="checkbox"]) {
+        font-size: 12px;
+        width: unset
+    }
+
+    /* .flex.wrap:has(input[type="checkbox"]) {
+        gap: 8px;
+    } */
 }
