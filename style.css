@@ -42,6 +42,7 @@ section:first-of-type {
 section.black {
     background-color: #191919;
     color: #ffffff;
+    z-index: 1;
 }
 
 h1 {
@@ -170,6 +171,7 @@ h6 {
     background-size: contain;
     background-position: center;
     background-image: url(images/move-beyond-bg.png);
+    background-color: transparent;
 }
 
 button {
@@ -258,7 +260,7 @@ a:focus-visible::after {
     position: absolute;
     width: 100vw;
     aspect-ratio: 1 / 1;
-    bottom: -70vw;
+    bottom: -30vw;
     left: 0;
     background-image: url(images/grid-bg.png);
     background-repeat: no-repeat;
