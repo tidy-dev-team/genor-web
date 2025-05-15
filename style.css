@@ -160,6 +160,10 @@ h6 {
     font-size: 26px;
 }
 
+.mt-2 {
+    margin-top: 2rem;
+}
+
 .move-beyond {
     background-repeat: no-repeat;
     background-size: contain;
