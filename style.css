@@ -371,9 +371,15 @@ a:focus-visible::after {
 .popup.hide {
     animation-name: fadeOut;
 }
-.no-click{
+
+.popup.loaded {
+    animation-delay: -200ms;
+}
+
+.no-click {
     overflow: hidden;
 }
+
 .no-click h1,
 .no-click p {
     pointer-events: none;
