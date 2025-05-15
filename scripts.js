@@ -61,3 +61,7 @@ function updateAnimationProgress(progress) {
     document.getElementById("mask-10").style.width = `${(mapRange(progress, 0.68181818, 0.74090909) * 100).toFixed(2)}%`;
     document.getElementById("mask-11").style.width = `${(mapRange(progress, 0.74090909, 0.8) * 100).toFixed(2)}%`;
 }
+
+function openPopup() {
+    document.getElementById("demoPopup").classList.remove('hide');
+}
