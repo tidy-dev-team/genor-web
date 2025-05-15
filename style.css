@@ -413,6 +413,7 @@ input[type="text"]:focus {
     isolation: isolate;
     z-index: 100;
     accent-color: #020617;
+    overflow: auto;
     box-shadow: 0 0 0 8000px #828282a6;
     animation: fadeIn 150ms ease-in-out;
 }
@@ -599,8 +600,4 @@ body:has(.popup.hide) #wrapper {
         font-size: 12px;
         width: unset
     }
-
-    /* .flex.wrap:has(input[type="checkbox"]) {
-        gap: 8px;
-    } */
 }
