@@ -378,6 +378,10 @@ a:focus-visible::after {
     animation-delay: -200ms;
 }
 
+.popup h1 {
+    font-size: 44px;
+}
+
 .no-click {
     overflow: hidden;
 }
