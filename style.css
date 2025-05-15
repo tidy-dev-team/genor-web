@@ -369,6 +369,35 @@ a:focus-visible::after {
     isolation: isolate;
     z-index: 100;
     box-shadow: 0 0 0 8000px #828282a6;
+    animation: fadeIn 150ms ease-in-out;
+}
+
+.popup.hide {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 0) scale(0.9);
+    }
 }
 
 .close-button {
