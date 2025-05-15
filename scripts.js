@@ -113,9 +113,17 @@ document.addEventListener('DOMContentLoaded', () => {
     updateScrollProgress(); // initial call
 });
 
+function mapRange(value, inMin, inMax, outMin = 0, outMax = 1) {
+    if (value < inMin) return outMin;
+    if (value > inMax) return outMax;
+    return ((value - inMin) / (inMax - inMin)) * (outMax - outMin) + outMin;
+}
+
 function updateAnimationProgress(progress) {
-    document.getElementById("mask-1").style.width = `${(progress * 200).toFixed(2)}%`;
-    document.getElementById("mask-2").style.width = `${(progress * 200).toFixed(2)}%`;
+    document.getElementById("mask-1").style.width = `${(mapRange(progress, 0, 0.1) * 100).toFixed(2)}%`;
+    document.getElementById("mask-2").style.width = `${(mapRange(progress, 0.1, 0.2) * 100).toFixed(2)}%`;
+    document.getElementById("mask-3").style.width = `${(mapRange(progress, 0.2, 0.3) * 100).toFixed(2)}%`;
+    document.getElementById("mask-4").style.width = `${(mapRange(progress, 0.3, 0.4) * 100).toFixed(2)}%`;
 
     // For testing, just log it or update something simple
     // const bar = document.getElementById('progressBar');

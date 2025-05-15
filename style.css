@@ -278,7 +278,7 @@ a:focus-visible::after {
 
 #runningText .mask {
     position: absolute;
-    height: 2ch;
+    height: 1.75ch;
     top: 0;
     left: 0;
     mix-blend-mode: color-burn;
@@ -286,15 +286,15 @@ a:focus-visible::after {
 }
 
 #runningText #mask-2 {
-    top: 2ch;
+    top: calc(1.93ch * 1);
 }
 
 #runningText #mask-3 {
-    top: 4ch;
+    top: calc(1.93ch * 2);
 }
 
 #runningText #mask-4 {
-    top: 6ch;
+    top: calc(1.93ch * 3);
 }
 
 .tab.active {
