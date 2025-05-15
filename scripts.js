@@ -42,18 +42,18 @@ if (element) {
 }
 
 function updateAnimationProgress(progress) {
-    const animation = element.animate([
-        { opacity: 0, transform: 'translateY(50px)' },
-        { opacity: 1, transform: 'translateY(0)' }
+    const animation1 = document.getElementById("mask-1").animate([
+        { width: '0px' },
+        { width: '1100px' }
     ], {
         duration: 1000,
         fill: 'forwards'
     });
 
-    animation.pause();
+    animation1.pause();
     if (element.getBoundingClientRect().top < 0) {
-        animation.currentTime = 100000;
+        animation1.currentTime = 100000;
     } else {
-        animation.currentTime = progress * 1000;
+        animation1.currentTime = progress * 1000;
     }
 }
