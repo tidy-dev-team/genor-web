@@ -285,19 +285,17 @@ a:focus-visible::after {
     background-color: #333333;
 }
 
-/* #runningText h1::before {
-    content: 'Meet GenOne: Genor’s orchestration\A engine that powers the entire AI\A engineering pipeline.\A It translates unstructured business\A needs into deployable workflows,\A automatically builds and optimizes\A them, and ensures production-grade\A reliability at scale.\A With GenOne, AI engineering\A becomes faster, smarter, and truly\A autonomous.';
-    white-space: pre;
-    color: #D1D1D1;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
+#runningText #mask-2 {
+    top: 2ch;
+}
 
-/* #runningText h1::before {
-    content: var(--textAfter);
-    color: #D1D1D1;
-} */
+#runningText #mask-3 {
+    top: 4ch;
+}
+
+#runningText #mask-4 {
+    top: 6ch;
+}
 
 .tab.active {
     color: #FF9900;
