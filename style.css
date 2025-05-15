@@ -346,7 +346,7 @@ a:focus-visible::after {
 
 .column {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .wrap {
@@ -354,9 +354,33 @@ a:focus-visible::after {
 }
 
 .flex.wrap .flex:has(input[type="checkbox"]) {
-    width: 30%;
+    width: 27%;
     white-space: pre;
     gap: 8px;
+}
+
+.flex.wrap:has(input[type="checkbox"]) {
+    gap: 20px;
+}
+
+input[type="text"] {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    font-weight: 400;
+    font-family: 'aeo-pro', sans-serif;
+    color: #333333;
+    outline-offset: 0;
+    transition: outline-offset 150ms ease-in-out 0s;
+}
+
+input[type="text"]::placeholder {
+    color: #64748B;
+}
+
+input[type="text"]:focus {
+    outline-offset: 2px;
+    outline: 2px solid #131219;
 }
 
 .flock {
@@ -380,7 +404,7 @@ a:focus-visible::after {
     display: flex;
     padding: 48px;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
     height: calc(100% - 296px);
     margin: 100px 0;
     background-color: white;
@@ -408,7 +432,7 @@ a:focus-visible::after {
 .popup h4 {
     font-size: 14px;
     margin: 0;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'aeo-pro', sans-serif;
 }
 
