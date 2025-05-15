@@ -387,6 +387,7 @@ a:focus-visible::after {
     color: #333333;
     isolation: isolate;
     z-index: 100;
+    accent-color: #020617;
     box-shadow: 0 0 0 8000px #828282a6;
     animation: fadeIn 150ms ease-in-out;
 }
@@ -413,6 +414,16 @@ a:focus-visible::after {
 
 .popup p {
     margin: 0;
+}
+
+.footnote {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'aeo-pro', sans-serif;
+}
+
+.footnote a {
+    color: #333333;
 }
 
 .no-click {
