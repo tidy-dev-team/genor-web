@@ -344,12 +344,17 @@ a:focus-visible::after {
     position: relative;
 }
 
+.column {
+    flex-direction: column;
+    gap: 20px;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
 
 .flex.wrap .flex:has(input[type="checkbox"]) {
-    width: 33%;
+    width: 30%;
     white-space: pre;
     gap: 8px;
 }
@@ -397,6 +402,13 @@ a:focus-visible::after {
 .popup h1 {
     font-size: 44px;
     text-wrap: normal;
+}
+
+.popup h4 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+    font-family: 'aeo-pro', sans-serif;
 }
 
 .popup p {
