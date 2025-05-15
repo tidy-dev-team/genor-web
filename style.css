@@ -156,6 +156,10 @@ h6 {
     text-align: left;
 }
 
+.bigger-p {
+    font-size: 26px;
+}
+
 .move-beyond {
     background-repeat: no-repeat;
     background-size: contain;
