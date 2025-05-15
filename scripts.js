@@ -120,10 +120,17 @@ function mapRange(value, inMin, inMax, outMin = 0, outMax = 1) {
 }
 
 function updateAnimationProgress(progress) {
-    document.getElementById("mask-1").style.width = `${(mapRange(progress, 0, 0.1) * 100).toFixed(2)}%`;
-    document.getElementById("mask-2").style.width = `${(mapRange(progress, 0.1, 0.2) * 100).toFixed(2)}%`;
-    document.getElementById("mask-3").style.width = `${(mapRange(progress, 0.2, 0.3) * 100).toFixed(2)}%`;
-    document.getElementById("mask-4").style.width = `${(mapRange(progress, 0.3, 0.4) * 100).toFixed(2)}%`;
+    document.getElementById("mask-1").style.width = `${(mapRange(progress, 0.15, 0.20909091) * 100).toFixed(2)}%`;
+    document.getElementById("mask-2").style.width = `${(mapRange(progress, 0.20909091, 0.26818182) * 100).toFixed(2)}%`;
+    document.getElementById("mask-3").style.width = `${(mapRange(progress, 0.26818182, 0.32727273) * 100).toFixed(2)}%`;
+    document.getElementById("mask-4").style.width = `${(mapRange(progress, 0.32727273, 0.38636364) * 100).toFixed(2)}%`;
+    document.getElementById("mask-5").style.width = `${(mapRange(progress, 0.38636364, 0.44545455) * 100).toFixed(2)}%`;
+    document.getElementById("mask-6").style.width = `${(mapRange(progress, 0.44545455, 0.50454545) * 100).toFixed(2)}%`;
+    document.getElementById("mask-7").style.width = `${(mapRange(progress, 0.50454545, 0.56363636) * 100).toFixed(2)}%`;
+    document.getElementById("mask-8").style.width = `${(mapRange(progress, 0.56363636, 0.62272727) * 100).toFixed(2)}%`;
+    document.getElementById("mask-9").style.width = `${(mapRange(progress, 0.62272727, 0.68181818) * 100).toFixed(2)}%`;
+    document.getElementById("mask-10").style.width = `${(mapRange(progress, 0.68181818, 0.74090909) * 100).toFixed(2)}%`;
+    document.getElementById("mask-11").style.width = `${(mapRange(progress, 0.74090909, 0.8) * 100).toFixed(2)}%`;
 
     // For testing, just log it or update something simple
     // const bar = document.getElementById('progressBar');
