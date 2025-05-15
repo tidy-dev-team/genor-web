@@ -364,6 +364,7 @@ a:focus-visible::after {
     height: calc(100% - 296px);
     margin: 100px 0;
     background-color: white;
+    color: #333333;
     isolation: isolate;
     z-index: 100;
     box-shadow: 0 0 0 8000px #828282a6;
@@ -380,6 +381,11 @@ a:focus-visible::after {
 
 .popup h1 {
     font-size: 44px;
+    text-wrap: normal;
+}
+
+.popup p {
+    margin: 0;
 }
 
 .no-click {
