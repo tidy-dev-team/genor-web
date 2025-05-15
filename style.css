@@ -272,14 +272,17 @@ a:focus-visible::after {
 }
 
 #runningText h1 {
-    color: #333333;
-    position: absolute;
-    z-index: 1;
+    color: #D1D1D1;
+    position: relative;
 }
 
-#runningText h1:nth-of-type(2) {
-    color: #D1D1D1;
-    z-index: 0;
+#runningText .mask {
+    position: absolute;
+    height: 2ch;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color-burn;
+    background-color: #333333;
 }
 
 /* #runningText h1::before {

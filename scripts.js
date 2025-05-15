@@ -49,9 +49,9 @@ if (element) {
 }
 
 function runAnimation() {
-    element.animate([
-        { opacity: 0, transform: 'translateY(50px)' },
-        { opacity: 1, transform: 'translateY(0)' }
+    document.getElementById("mask-1").animate([
+        { width: '0px' },
+        { width: '1100px' }
     ], {
         duration: 1000,
         fill: 'forwards'
