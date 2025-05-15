@@ -19,3 +19,7 @@ function tabFunc(e) {
     e.target.classList.add('active');
 
 }
+
+function scrollFunc() {
+
+}
