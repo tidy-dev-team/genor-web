@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function updateAnimationProgress(progress) {
     document.getElementById("mask-1").style.width = `${(progress * 200).toFixed(2)}%`;
+    document.getElementById("mask-2").style.width = `${(progress * 200).toFixed(2)}%`;
 
     // For testing, just log it or update something simple
     // const bar = document.getElementById('progressBar');
