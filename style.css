@@ -19,6 +19,7 @@ section {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    isolation: isolate;
 }
 
 section {
@@ -338,6 +339,15 @@ a:focus-visible::after {
             #F90,
             #995C00) border-box;
     animation: 3s rotate linear infinite;
+}
+
+.flock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 @keyframes rotate {
