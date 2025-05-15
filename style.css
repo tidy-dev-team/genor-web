@@ -339,6 +339,21 @@ a:focus-visible::after {
     animation: 3s rotate linear infinite;
 }
 
+.flex {
+    display: flex;
+    position: relative;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.wrap .flex:has(input[type="checkbox"]) {
+    width: 33%;
+    white-space: pre;
+    gap: 8px;
+}
+
 .flock {
     position: absolute;
     top: 0;
