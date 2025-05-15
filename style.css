@@ -271,7 +271,7 @@ a:focus-visible::after {
     mix-blend-mode: multiply;
 }
 
-.running-text {
+#running-text {
     color: #D1D1D1;
 }
 
