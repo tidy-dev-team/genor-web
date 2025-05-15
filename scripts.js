@@ -22,6 +22,7 @@ function tabFunc(e) {
 
 
 const element = document.getElementById('runningText');
+let hasAnimated = false; // track if the animation already ran
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -30,8 +31,14 @@ const observer = new IntersectionObserver((entries) => {
         // Log the visibility percentage
         console.log(`Visible: ${(ratio * 100).toFixed(2)}%`);
 
-        // Example: Update an animation progress (0 to 1 scale)
-        updateAnimationProgress(ratio);
+        // Only run animation once when at least 10% visible
+        if (!hasAnimated && ratio >= 0.1) {
+            runAnimation();
+            hasAnimated = true;
+
+            // Optional: unobserve if you don’t need it anymore
+            observer.unobserve(entry.target);
+        }
     });
 }, {
     threshold: Array.from({ length: 101 }, (_, i) => i / 100) // 0.00, 0.01, ..., 1.00
@@ -41,8 +48,12 @@ if (element) {
     observer.observe(element);
 }
 
-function updateAnimationProgress(progress) {
-    // Example: Animate opacity or transform based on progress
-    element.style.opacity = progress;
-    // element.style.transform = `translateY(${(1 - progress) * 50}px)`;
+function runAnimation() {
+    element.animate([
+        { opacity: 0, transform: 'translateY(50px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+    ], {
+        duration: 1000,
+        fill: 'forwards'
+    });
 }
