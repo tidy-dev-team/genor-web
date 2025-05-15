@@ -65,3 +65,6 @@ function updateAnimationProgress(progress) {
 function openPopup() {
     document.getElementById("demoPopup").classList.remove('hide');
 }
+function closePopup() {
+    document.getElementById("demoPopup").classList.add('hide');
+}

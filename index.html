@@ -15,8 +15,8 @@
 
 <body>
     <div id="wrapper">
-        <div class="popup hide" id="demoPopup"></div>
-        <div id="progressBar" style="position:fixed; top:0; left:0; height:4px; background:#00f; width:0%; z-index:9999;"></div>
+        <div id="progressBar"
+            style="position:fixed; top:0; left:0; height:4px; background:#00f; width:0%; z-index:9999;"></div>
         <header>
             <div class="logo"></div>
             <nav>
@@ -141,6 +141,9 @@
                 </nav>
             </footer>
         </div>
+    </div>
+    <div class="popup hide" id="demoPopup">
+        <button class="close-button" onclick="closePopup();"></button>
     </div>
     <script src="scripts.js"></script>
 

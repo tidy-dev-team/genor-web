@@ -356,6 +356,7 @@ a:focus-visible::after {
     left: 50%;
     max-width: 100vw;
     width: 700px;
+    max-width: 70vw;
     transform: translate(-50%, 0);
     border-radius: 24px;
     display: flex;
@@ -365,13 +366,40 @@ a:focus-visible::after {
     height: calc(100% - 296px);
     margin: 100px 0;
     background-color: white;
+    isolation: isolate;
     z-index: 100;
     box-shadow: 0 0 0 8000px #828282a6;
+}
+
+.close-button {
+    position: absolute;
+    top: calc(50% + 32px);
+    right: calc(50% + 32px);
+    transform: translate(50vw, -50vh);
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background: #171717;
+    background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.96976 6.9678C7.37474 6.56282 8.03136 6.56282 8.43635 6.9678L15.9993 14.5308L23.5624 6.9678C23.9673 6.56282 24.624 6.56282 25.0289 6.9678C25.4339 7.37279 25.4339 8.02941 25.0289 8.4344L17.4659 15.9974L25.0289 23.5604C25.4339 23.9654 25.4339 24.622 25.0289 25.027C24.624 25.432 23.9673 25.432 23.5624 25.027L15.9993 17.464L8.43635 25.027C8.03136 25.432 7.37474 25.432 6.96976 25.027C6.56477 24.622 6.56477 23.9654 6.96976 23.5604L14.5328 15.9974L6.96976 8.4344C6.56477 8.02941 6.56477 7.37279 6.96976 6.9678Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.close-button:hover {
+    transform: translate(50vw, -50vh);
 }
 
 .hide {
     opacity: 0;
     pointer-events: none;
+}
+
+body #wrapper {
+    pointer-events: none;
+}
+
+body:has(.popup.hide) #wrapper {
+    pointer-events: all;
 }
 
 @keyframes rotate {
