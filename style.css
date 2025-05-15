@@ -271,7 +271,17 @@ a:focus-visible::after {
     mix-blend-mode: multiply;
 }
 
-#running-text {
+#runningText h1 {
+    position: relative;
+}
+
+#runningText h1::before,
+#runningText h1::after {
+    content: 'Meet GenOne: Genor’s orchestration\A engine that powers the entire AI\A engineering pipeline.\A It translates unstructured business\A needs into deployable workflows,\A automatically builds and optimizes\A them, and ensures production-grade\A reliability at scale.\A With GenOne, AI engineering\A becomes faster, smarter, and truly\A autonomous.';
+    white-space: pre;
+    color: #333333;
+}
+#runningText h1::after{
     color: #D1D1D1;
 }
 

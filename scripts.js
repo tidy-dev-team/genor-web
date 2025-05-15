@@ -20,6 +20,29 @@ function tabFunc(e) {
 
 }
 
-function scrollFunc() {
 
+const element = document.getElementById('runningText');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const ratio = entry.intersectionRatio;
+
+        // Log the visibility percentage
+        console.log(`Visible: ${(ratio * 100).toFixed(2)}%`);
+
+        // Example: Update an animation progress (0 to 1 scale)
+        updateAnimationProgress(ratio);
+    });
+}, {
+    threshold: Array.from({ length: 101 }, (_, i) => i / 100) // 0.00, 0.01, ..., 1.00
+});
+
+if (element) {
+    observer.observe(element);
+}
+
+function updateAnimationProgress(progress) {
+    // Example: Animate opacity or transform based on progress
+    element.style.opacity = progress;
+    // element.style.transform = `translateY(${(1 - progress) * 50}px)`;
 }
