@@ -270,6 +270,15 @@ a:focus-visible::after {
     mix-blend-mode: multiply;
 }
 
+.grid-image {
+    width: 50%;
+    height: auto;
+}
+
+.grid h6 {
+    margin-top: 115px;
+}
+
 #runningText {
     --spacing: 1.89ch;
 }
