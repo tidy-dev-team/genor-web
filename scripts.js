@@ -69,3 +69,7 @@ function openPopup() {
 function closePopup() {
     document.getElementById("demoPopup").classList.add('hide');
 }
+
+function scrollToTop() {
+    document.getElementById("wrapper").scrollTo(0, 0);
+}
