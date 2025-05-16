@@ -570,6 +570,18 @@ body:has(.popup.hide) #wrapper {
         bottom: 0;
     }
 
+    .grid h6 {
+        margin-top: 0;
+    }
+
+    .grid .flex {
+        flex-direction: column;
+    }
+
+    .grid-image {
+        width: 100%;
+    }
+
     .popup {
         width: 100%;
         max-width: unset;
