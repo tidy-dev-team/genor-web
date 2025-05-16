@@ -32,6 +32,10 @@ header a {
     background-image: url('images/Genor.svg');
 }
 
+.logo[onclick] {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 920px) {
     header nav {
         display: none;
