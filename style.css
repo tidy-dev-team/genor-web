@@ -583,6 +583,11 @@ body:has(.popup.hide) #wrapper {
         background-color: transparent;
     }
 
+    .close-button:hover {
+        filter: invert(100%);
+        transform: scale(0.75);
+    }
+
     .popup h1 {
         font-size: 28px;
     }
