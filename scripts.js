@@ -92,7 +92,8 @@ document.addEventListener('keydown', function (event) {
 const form = document.getElementById('popupForm');
 form.addEventListener('submit', function (e) {
     if (!form.checkValidity()) {
-        e.preventDefault(); // Stop submission if form is invalid
+        document.getElementById("emailInput").classList.add('error');
+        e.preventDefault();
     } else {
         sendPopup();
     }

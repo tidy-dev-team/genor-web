@@ -378,7 +378,7 @@ a:focus-visible::after {
     gap: 20px;
 }
 
-input[type="text"] {
+.textInput {
     padding: 16px;
     border-radius: 8px;
     border: 1px solid #E2E8F0;
@@ -389,27 +389,27 @@ input[type="text"] {
     transition: outline-offset 150ms ease-in-out 0s;
 }
 
-input[type="text"]::placeholder {
+.textInput::placeholder {
     color: #64748B;
 }
 
-input[type="text"]:focus {
+.textInput:focus {
     outline-offset: 2px;
     outline: 2px solid #131219;
 }
 
-input[type="text"]+p {
+.textInput+p {
     display: none;
     color: red;
     font-size: 14px;
-    margin-top: -14px;
+    margin-top: -14px !important;
 }
 
-input[type="text"].error {
+.textInput.error {
     border-color: red;
 }
 
-input[type="text"].error+p {
+.textInput.error+p {
     display: block;
 }
 
