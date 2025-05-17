@@ -398,6 +398,10 @@ input[type="text"]:focus {
     outline: 2px solid #131219;
 }
 
+input[type="text"].error {
+    border-color: red;
+}
+
 .flock {
     position: absolute;
     top: 0;

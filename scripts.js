@@ -65,8 +65,14 @@ function updateAnimationProgress(progress) {
 function openPopup() {
     document.getElementById("demoPopup").classList.remove('hide');
     document.getElementById("demoPopup").classList.remove('loaded');
+    document.getElementById("emailInput").classList.remove('error');
 }
+
 function closePopup() {
+    document.getElementById("demoPopup").classList.add('hide');
+}
+
+function sendPopup() {
     if (document.getElementById("emailInput").value !== "") {
         document.getElementById("demoPopup").classList.add('hide');
     } else {
