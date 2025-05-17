@@ -153,14 +153,14 @@
     <div class="popup hide loaded" id="demoPopup">
         <button class="close-button" onclick="closePopup();"></button>
         <div class="logo"></div>
-        <form onsubmit="return false">
+        <form onsubmit="return false" id="popupForm">
             <h1 class="left-align">
                 Let’s Build Your Next-Level<br />
                 AI Workflow Together
             </h1>
             <p>Book a tailored walkthrough and discover how we can support your team’s</p>
             <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Business Email *" mandatory="true" id="emailInput" />
+            <input type="email" placeholder="Business Email *" mandatory="true" id="emailInput" />
             <p>This input is mandatory.</p>
 
             <div class="flex column">
@@ -203,7 +203,7 @@
             </div>
 
             <div class="flex">
-                <button onclick="sendPopup();">Send</button>
+                <button onclick="">Send</button>
             </div>
 
             <p class="footnote">Contact directly at <a href="mailto:hello@genor.com">hello@genor.com</a></p>
