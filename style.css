@@ -401,6 +401,8 @@ input[type="text"]:focus {
 input[type="text"]+p {
     display: none;
     color: red;
+    font-size: 14px;
+    margin-top: -14px;
 }
 
 input[type="text"].error {
