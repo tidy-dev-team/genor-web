@@ -67,7 +67,11 @@ function openPopup() {
     document.getElementById("demoPopup").classList.remove('loaded');
 }
 function closePopup() {
-    document.getElementById("demoPopup").classList.add('hide');
+    if (document.getElementById("emailInput").value !== "") {
+        document.getElementById("demoPopup").classList.add('hide');
+    } else {
+        document.getElementById("emailInput").classList.add('error');
+    }
 }
 
 function scrollToTop() {
