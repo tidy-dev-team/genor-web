@@ -398,8 +398,17 @@ input[type="text"]:focus {
     outline: 2px solid #131219;
 }
 
+input[type="text"]+p {
+    display: none;
+    color: red;
+}
+
 input[type="text"].error {
     border-color: red;
+}
+
+input[type="text"].error+p {
+    display: block;
 }
 
 .flock {
