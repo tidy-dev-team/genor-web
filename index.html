@@ -153,58 +153,60 @@
     <div class="popup hide loaded" id="demoPopup">
         <button class="close-button" onclick="closePopup();"></button>
         <div class="logo"></div>
-        <h1 class="left-align">
-            Let’s Build Your Next-Level<br />
-            AI Workflow Together
-        </h1>
-        <p>Book a tailored walkthrough and discover how we can support your team’s</p>
-        <input type="text" placeholder="Full Name" />
-        <input type="text" placeholder="Business Email *" mandatory="true" />
+        <form onsubmit="return false">
+            <h1 class="left-align">
+                Let’s Build Your Next-Level<br />
+                AI Workflow Together
+            </h1>
+            <p>Book a tailored walkthrough and discover how we can support your team’s</p>
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Business Email *" mandatory="true" />
 
-        <div class="flex column">
-            <h4>Role/Department:</h4>
-            <div class="flex wrap aeo-pro">
-                <div class="flex">
-                    <input type="checkbox" id="AIML" /><label for="AIML">AI/ML Engineering</label>
-                </div>
-                <div class="flex">
-                    <input type="checkbox" id="IT" /><label for="IT">IT & Infrastructure</label>
-                </div>
-                <div class="flex">
-                    <input type="checkbox" id="OPS" /><label for="OPS">Operations / Process Improvement</label>
-                </div>
-                <div class="flex">
-                    <input type="checkbox" id="FIN" /><label for="FIN">Finance & Procurement</label>
-                </div>
-                <div class="flex">
-                    <input type="checkbox" id="LEG" /><label for="LEG">Legal & Compliance</label>
-                </div>
-                <div class="flex">
-                    <input type="checkbox" id="EXE" /><label for="EXE">Executive Leadership</label>
+            <div class="flex column">
+                <h4>Role/Department:</h4>
+                <div class="flex wrap aeo-pro">
+                    <div class="flex">
+                        <input type="checkbox" id="AIML" /><label for="AIML">AI/ML Engineering</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="IT" /><label for="IT">IT & Infrastructure</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="OPS" /><label for="OPS">Operations / Process Improvement</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="FIN" /><label for="FIN">Finance & Procurement</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="LEG" /><label for="LEG">Legal & Compliance</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="EXE" /><label for="EXE">Executive Leadership</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="flex column">
-            <h4>I’m interested in:</h4>
-            <div class="flex wrap aeo-pro">
-                <div class="flex">
-                    <input type="checkbox" id="REQ" /><label for="REQ">Request a Demo</label>
-                </div>
-                <div class="flex">
-                    <input type="checkbox" id="PRIC" /><label for="PRIC">Pricing & Licensing</label>
-                </div>
-                <div class="flex">
-                    <input type="checkbox" id="PART" /><label for="PART">Partnership Inquiry</label>
+            <div class="flex column">
+                <h4>I’m interested in:</h4>
+                <div class="flex wrap aeo-pro">
+                    <div class="flex">
+                        <input type="checkbox" id="REQ" /><label for="REQ">Request a Demo</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="PRIC" /><label for="PRIC">Pricing & Licensing</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="PART" /><label for="PART">Partnership Inquiry</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="flex">
-            <button onclick="closePopup();">Send</button>
-        </div>
+            <div class="flex">
+                <button onclick="closePopup();">Send</button>
+            </div>
 
-        <p class="footnote">Contact directly at <a href="mailto:hello@genor.com">hello@genor.com</a></p>
+            <p class="footnote">Contact directly at <a href="mailto:hello@genor.com">hello@genor.com</a></p>
+        </form>
 
     </div>
     <script src="scripts.js"></script>

@@ -431,6 +431,12 @@ input[type="text"]:focus {
     animation: fadeIn 150ms ease-in-out;
 }
 
+.popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .popup.hide {
     animation-name: fadeOut;
 }
