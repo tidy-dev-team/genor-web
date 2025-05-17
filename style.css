@@ -30,6 +30,10 @@ section {
     color: #333333;
 }
 
+section.no-min {
+    min-height: 0;
+}
+
 section:first-of-type {
     min-height: calc(100vh - 80px);
 }
