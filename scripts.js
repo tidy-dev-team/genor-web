@@ -91,8 +91,8 @@ document.addEventListener('keydown', function (event) {
 
 const form = document.getElementById('popupForm');
 form.addEventListener('submit', function (e) {
+    document.getElementById("emailInput").classList.add('error');
     if (!form.checkValidity()) {
-        document.getElementById("emailInput").classList.add('error');
         e.preventDefault();
     } else {
         sendPopup();
