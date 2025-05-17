@@ -83,3 +83,8 @@ function sendPopup() {
 function scrollToTop() {
     document.getElementById("wrapper").scrollTo(0, 0);
 }
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        closePopup();
+    }
+});
