@@ -65,6 +65,10 @@ h6 {
     text-transform: uppercase;
 }
 
+.white-text {
+    color: #ffffff;
+}
+
 .content {
     position: relative;
     width: 80vw;
