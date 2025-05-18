@@ -87,6 +87,12 @@ h6 {
     /* background-color: rebeccapurple; */
     overflow: auto;
 }
+#stickyScroll{
+    background-image: url(images/scroll-image_01-min.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+}
 
 h3 {
     font-size: 18px;

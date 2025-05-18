@@ -1,12 +1,23 @@
 function scrollEnd(e) {
+    if (e.target.scrollTop > 1500) {
+        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
+    } else {
+        if (e.target.scrollTop > 750) {
+            document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_02-min.png)";
+        } else {
+            document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_01-min.png)";
+        }
+    }
     if (e.target.scrollHeight - e.target.scrollTop < 820) {
         console.log("done");
+        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
         var x = e.target.querySelectorAll(".collapse");
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].style.padding = "0";
         }
         e.target.style.gap = "16px";
+        e.target.style.paddingBottom = "100px";
     }
 }
 
