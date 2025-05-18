@@ -84,10 +84,10 @@ h6 {
     min-height: 0;
     height: fit-content;
     max-height: 82vh;
-    /* background-color: rebeccapurple; */
     overflow: auto;
 }
-#stickyScroll{
+
+#stickyScroll {
     background-image: url(images/scroll-image_01-min.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -578,6 +578,11 @@ a:focus-visible::after {
     pointer-events: none;
 }
 
+.mobile-image {
+    width: 100%;
+    height: auto;
+}
+
 body #wrapper {
     pointer-events: none;
 }
@@ -621,6 +626,15 @@ body:has(.popup.hide) #wrapper {
 
     .content {
         gap: 16px;
+        height: fit-content;
+        max-height: unset;
+        overflow: hidden;
+        padding-bottom: 0 !important;
+    }
+
+    .collapse {
+        position: relative;
+        padding-bottom: 0 !important;
     }
 
     button {
@@ -714,6 +728,10 @@ body:has(.popup.hide) #wrapper {
     .no-click h1,
     .no-click p {
         pointer-events: all;
+    }
+
+    #stickyScroll {
+        background-image: none !important;
     }
 
     @keyframes fadeIn {
