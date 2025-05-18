@@ -634,6 +634,7 @@ body:has(.popup.hide) #wrapper {
 
     .collapse {
         position: relative;
+        top: 0 !important;
         padding-bottom: 0 !important;
     }
 
