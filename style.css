@@ -295,6 +295,7 @@ a:focus-visible::after {
 }
 
 #runningText {
+    user-select: none;
     --spacing: 1.89ch;
 }
 
