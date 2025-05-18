@@ -705,6 +705,11 @@ body:has(.popup.hide) #wrapper {
         height: auto;
     }
 
+    .no-click h1,
+    .no-click p {
+        pointer-events: all;
+    }
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
