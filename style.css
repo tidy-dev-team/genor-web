@@ -353,6 +353,12 @@ a:focus-visible::after {
     top: calc(var(--spacing) * 10);
 }
 
+#tabImage {
+    width: 80vw;
+    max-width: 1000px;
+    height: auto;
+}
+
 .tab.active {
     color: #FF9900;
     pointer-events: none;
