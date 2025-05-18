@@ -18,6 +18,7 @@ function tabFunc(e) {
         x[i].classList.remove('active');
     }
     e.target.classList.add('active');
+    document.getElementById("tabImage").src = "images/tab_0" + window.tab + "-min.png";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
