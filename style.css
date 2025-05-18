@@ -581,6 +581,7 @@ a:focus-visible::after {
 .mobile-image {
     width: 100%;
     height: auto;
+    display: none;
 }
 
 body #wrapper {
@@ -733,6 +734,10 @@ body:has(.popup.hide) #wrapper {
 
     #stickyScroll {
         background-image: none !important;
+    }
+
+    .mobile-image {
+        display: block;
     }
 
     @keyframes fadeIn {
