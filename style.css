@@ -69,6 +69,11 @@ h6 {
     color: #ffffff;
 }
 
+.video {
+    width: 100vw;
+    height: auto;
+}
+
 .content {
     position: relative;
     width: 80vw;
