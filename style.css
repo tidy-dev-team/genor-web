@@ -66,7 +66,7 @@ h6 {
 }
 
 .white-text {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .video {
@@ -270,6 +270,10 @@ a:focus-visible::after {
     opacity: 0.8;
 }
 
+.no-margin {
+    margin: 0;
+}
+
 .grid::after {
     content: '';
     position: absolute;
@@ -357,6 +361,10 @@ a:focus-visible::after {
     width: 80vw;
     max-width: 1000px;
     height: auto;
+}
+
+.subtitle.tab-p {
+    font-size: 18px;
 }
 
 .tab.active {
