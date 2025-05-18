@@ -691,6 +691,20 @@ body:has(.popup.hide) #wrapper {
         display: block;
     }
 
+    .flock {
+        height: 100%;
+        width: auto;
+    }
+
+    .no-min-mobile {
+        min-height: unset;
+    }
+
+    #useCases {
+        width: 100vw;
+        height: auto;
+    }
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
