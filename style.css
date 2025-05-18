@@ -592,6 +592,11 @@ body:has(.popup.hide) #wrapper {
     pointer-events: all;
 }
 
+#formFooter {
+    display: none;
+    gap: 4px;
+}
+
 @keyframes rotate {
     to {
         --angle: 360deg;

@@ -125,5 +125,5 @@ form.addEventListener('submit', e => {
 
 function formGood() {
     // alert('yes')
-    document.getElementById("formFooter").innerText = "Your request has been submitted";
+    document.getElementById("formFooter").style.display = "flex";
 }
