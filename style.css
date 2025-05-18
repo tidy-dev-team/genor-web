@@ -535,6 +535,16 @@ button.no-click {
     pointer-events: none;
 }
 
+#spinner {
+    display: none;
+    width: 16px;
+    height: 16px;
+}
+
+button.no-click>#spineer {
+    display: block;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
