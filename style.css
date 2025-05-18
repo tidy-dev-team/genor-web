@@ -531,6 +531,10 @@ a:focus-visible::after {
     pointer-events: none;
 }
 
+button.no-click {
+    pointer-events: none;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
