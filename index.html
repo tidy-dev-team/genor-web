@@ -111,11 +111,12 @@
             <p class="subtitle">Rapidly prototype, test, and deploy AI orchestrations into<br />real-world operations.
             </p>
             <div class="tabs-wrapper">
-                <button class="tab active" onclick="tabFunc(event);">Evaluate</button>
-                <button class="tab" onclick="tabFunc(event);">Monitor</button>
-                <button class="tab" onclick="tabFunc(event);">Resolve</button>
-                <button class="tab" onclick="tabFunc(event);">Collaborate</button>
+                <button class="tab active" onclick="window.tab=1; tabFunc(event);">Evaluate</button>
+                <button class="tab" onclick="window.tab=2; tabFunc(event);">Monitor</button>
+                <button class="tab" onclick="window.tab=3; tabFunc(event);">Resolve</button>
+                <button class="tab" onclick="window.tab=4; tabFunc(event);">Collaborate</button>
             </div>
+            <image src="images/tab_01-min.png" id="tabImage" />
         </section>
         <section class="grid">
             <div class="flex full-width">

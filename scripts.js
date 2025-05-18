@@ -11,13 +11,13 @@ function scrollEnd(e) {
 }
 
 function tabFunc(e) {
+    tabImages = ["tab_01-min.png"];
     var x = e.target.parentElement.querySelectorAll(".tab");
     var i;
     for (i = 0; i < x.length; i++) {
         x[i].classList.remove('active');
     }
     e.target.classList.add('active');
-
 }
 
 document.addEventListener('DOMContentLoaded', () => {
