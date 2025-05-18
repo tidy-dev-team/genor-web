@@ -11,6 +11,7 @@ function scrollEnd(e) {
 }
 
 function tabFunc(e) {
+    tabTitles = ["Evaluate performance at every level", "See inside your workflows in real-time", "Catch drifts before they cause problems", "Build and iterate as a team—without friction"];
     tabImages = ["tab_01-min.png"];
     var x = e.target.parentElement.querySelectorAll(".tab");
     var i;
@@ -19,6 +20,7 @@ function tabFunc(e) {
     }
     e.target.classList.add('active');
     document.getElementById("tabImage").src = "images/tab_0" + window.tab + "-min.png";
+    document.getElementById("tabTitle").innerText = tabTitles[window.tab]
 }
 
 document.addEventListener('DOMContentLoaded', () => {
