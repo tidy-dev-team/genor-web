@@ -107,11 +107,18 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-const form = document.getElementById('popupForm');
-form.addEventListener('submit', function (e) {
-    if (!form.checkValidity()) {
-        e.preventDefault();
-    } else {
-        sendPopup();
-    }
-});
+// const form = document.getElementById('popupForm');
+// form.addEventListener('submit', function (e) {
+//     if (!form.checkValidity()) {
+//         e.preventDefault();
+//     } else {
+//         sendPopup();
+//     }
+// });
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz2DDolkr1dO6iKo-uLIfqMMhN6W_oQ3TaVM68usqo514aOI5ry41dv-dZXbPnlT16x/exec';
+const form = document.forms['popupForm']
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(response => alert("Thank you! your form is submitted successfully.")).then(() => { window.location.reload(); }).catch(error => console.error('Error!', error.message))
+})

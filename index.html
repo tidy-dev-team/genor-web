@@ -168,14 +168,15 @@
     <div class="popup hide loaded" id="demoPopup">
         <button class="close-button" onclick="closePopup();"></button>
         <div class="logo"></div>
-        <form onsubmit="preventDefault()" id="popupForm" method="POST" action="https://script.google.com/macros/s/AKfycbz2DDolkr1dO6iKo-uLIfqMMhN6W_oQ3TaVM68usqo514aOI5ry41dv-dZXbPnlT16x/exec">
+        <form onsubmit="preventDefault()" id="popupForm" method="POST">
             <h1 class="left-align">
                 Let’s Build Your Next-Level<br />
                 AI Workflow Together
             </h1>
             <p>Book a tailored walkthrough and discover how we can support your team’s</p>
             <input type="text" name="Fullname" class="textInput" placeholder="Full Name" />
-            <input type="email" name="Email" class="textInput" placeholder="Business Email *" required id="emailInput" />
+            <input type="email" name="Email" class="textInput" placeholder="Business Email *" required
+                id="emailInput" />
             <p>This input is mandatory.</p>
 
             <div class="flex column">
