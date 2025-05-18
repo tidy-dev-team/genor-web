@@ -357,10 +357,15 @@ a:focus-visible::after {
     top: calc(var(--spacing) * 10);
 }
 
-#tabImage {
+#tabImage,
+#tabImageMobile {
     width: 80vw;
     max-width: 1000px;
     height: auto;
+}
+
+#tabImageMobile {
+    display: none;
 }
 
 .subtitle.tab-p {
@@ -676,6 +681,14 @@ body:has(.popup.hide) #wrapper {
     .flex.wrap .flex:has(input[type="checkbox"]) {
         font-size: 12px;
         width: unset
+    }
+
+    #tabImage {
+        display: none;
+    }
+
+    #tabImageMobile {
+        display: block;
     }
 
     @keyframes fadeIn {

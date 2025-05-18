@@ -20,6 +20,7 @@ function tabFunc(e) {
         x[i].classList.remove('active');
     }
     e.target.classList.add('active');
+    document.getElementById("tabImageMobile").src = "images/tab_0" + window.tab + "-mobile-min.png";
     document.getElementById("tabImage").src = "images/tab_0" + window.tab + "-min.png";
     document.getElementById("tabTitle").innerText = tabTitles[window.tab - 1];
     document.getElementById("tabPara").innerText = tabParas[window.tab - 1];
