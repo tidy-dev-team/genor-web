@@ -123,6 +123,7 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(response => formGood()).then(() => { }).catch(error => console.error('Error!', error.message))
 })
 
-function formGood(){
-    alert('yes')
+function formGood() {
+    // alert('yes')
+    document.getElementById("formFooter").innerText = "Your request has been submitted";
 }
