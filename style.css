@@ -541,7 +541,7 @@ button.no-click {
     height: 16px;
 }
 
-button.no-click>#spineer {
+div:has(button.no-click)+#spinner {
     display: block;
 }
 
