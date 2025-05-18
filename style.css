@@ -594,6 +594,7 @@ body:has(.popup.hide) #wrapper {
 
 #formFooter {
     display: none;
+    align-items: center;
     gap: 4px;
 }
 
