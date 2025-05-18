@@ -120,10 +120,14 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2DDolkr1dO6iKo-uLIf
 const form = document.forms['popupForm']
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(response => formGood()).then(() => { }).catch(error => console.error('Error!', error.message))
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(response => formGood()).then(() => { }).catch(error => console.error('Error!', error.message), formBad(error.message))
 })
 
 function formGood() {
-    // alert('yes')
     document.getElementById("formFooter").style.display = "flex";
+    document.getElementById("formFooter").innerHTML = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9Z" fill="#4FD479"/><path d="M5.5 9.30556L8.3 11.75L12.5 6.25" fill="#4FD479"/><path d="M5.5 9.30556L8.3 11.75L12.5 6.25M9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9C17 13.4183 13.4183 17 9 17Z" stroke="white" stroke-width="1.66594" stroke-linejoin="round"/></svg> Your request has been submitted';
+}
+function formBad(x) {
+    document.getElementById("formFooter").style.display = "flex";
+    document.getElementById("formFooter").innerText = 'Error! ' + x;
 }
