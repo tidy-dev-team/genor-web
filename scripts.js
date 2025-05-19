@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
         if ((progress * 100) > 85) {
-            document.getElementById("starDiv").style.backgroundSize = "300%";
+            document.getElementById("starDiv").style.backgroundSize = "400%";
             setTimeout(() => {
                 document.getElementById("starVideo").play();
             }, 700);

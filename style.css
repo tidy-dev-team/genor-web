@@ -751,6 +751,7 @@ body:has(.popup.hide) #wrapper {
         width: 100%;
         max-width: unset;
         height: 100%;
+        max-height: unset;
         transform: none;
         top: 0;
         left: 0;
