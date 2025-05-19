@@ -178,6 +178,10 @@ h6 {
     text-align: center;
 }
 
+.center {
+    text-align: center;
+}
+
 .all-caps {
     letter-spacing: -2px;
     line-height: 0.93;
@@ -195,7 +199,7 @@ h6 {
 }
 
 .bigger-p {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .mt-2 {
@@ -223,7 +227,7 @@ button {
     background-color: #FFFB68;
     padding: 14px 26px;
     border-radius: 14px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'aeo-pro';
     font-weight: 500;
     cursor: pointer;
