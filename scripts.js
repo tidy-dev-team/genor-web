@@ -51,6 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const progress = Math.min(Math.max((start - rect.top) / (start - end), 0), 1);
 
         console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
+        if ((progress * 100) > 85) {
+            document.getElementById("starDiv").style.backgroundSize = "300%";
+        }
         updateAnimationProgress(progress);
     }
 
