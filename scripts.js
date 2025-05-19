@@ -17,7 +17,7 @@ function scrollEnd(e) {
             x[i].style.padding = "0";
         }
         e.target.style.gap = "28px";
-        e.target.style.paddingBottom = "100px";
+        e.target.style.paddingBottom = "200px";
     }
 }
 
