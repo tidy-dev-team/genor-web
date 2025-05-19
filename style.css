@@ -234,8 +234,10 @@ h1 {
     background-color: transparent;
     isolation: unset;
     min-height: 80vh;
-    padding-top: 200px;
-    padding-bottom: 0;
+    /* padding-top: 200px; */
+    padding: 0 !important;
+    padding-bottom: 50px !important;
+    justify-content: center;
 }
 
 .move-beyond .subtitle {
@@ -422,6 +424,7 @@ section.black.no-min-mobile {
 #runningText #mask-11 {
     top: calc(var(--spacing) * 10);
 }
+
 #runningText #mask-12 {
     top: calc(var(--spacing) * 11);
 }
