@@ -327,6 +327,11 @@ a:focus-visible::after {
     margin: 0;
 }
 
+section.black.no-min-mobile {
+    padding: 0;
+    min-height: unset;
+}
+
 .grid::after {
     content: '';
     position: absolute;
