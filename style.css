@@ -233,7 +233,7 @@ h1 {
     /* background-image: url(images/grid-footer.png); */
     background-color: transparent;
     isolation: unset;
-    min-height: 90vh;
+    min-height: 80vh;
     padding-top: 200px;
     padding-bottom: 0;
 }
@@ -332,7 +332,7 @@ a:focus-visible::after {
     position: absolute;
     width: 100vw;
     aspect-ratio: 1 / 1;
-    bottom: -30vw;
+    bottom: -8vw;
     left: 0;
     background-image: url(images/grid-bg.png);
     background-repeat: no-repeat;
