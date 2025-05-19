@@ -16,7 +16,7 @@ function scrollEnd(e) {
         for (i = 0; i < x.length; i++) {
             x[i].style.padding = "0";
         }
-        e.target.style.gap = "16px";
+        e.target.style.gap = "28px";
         e.target.style.paddingBottom = "100px";
     }
 }

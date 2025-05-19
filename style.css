@@ -110,7 +110,7 @@ h6 {
 #stickyScroll {
     background-image: url(images/scroll-image_01-min.png);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: 90% 0%;
     background-size: 50%;
 }
 
@@ -130,17 +130,23 @@ p {
 }
 
 .subtitle {
-    font-size: 22px;
+    font-size: 20px;
     color: #A0A0A0;
     width: 670px;
     text-align: center;
     margin: 12px 0;
+    margin-bottom: 80px;
 }
 
 .collapse p {
     color: #929292;
-    max-width: 405px;
+    max-width: 340px;
     margin-top: 0;
+}
+
+.collapse p,
+.collapse h3 {
+    font-size: 16px;
 }
 
 .collapse {
@@ -150,7 +156,7 @@ p {
 }
 
 .collapse:nth-of-type(2) {
-    top: 128px;
+    top: 114px;
 }
 
 .collapse:nth-of-type(3) {
