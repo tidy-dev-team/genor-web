@@ -35,11 +35,11 @@ section.no-min {
 }
 
 section:first-of-type {
-    min-height: calc(90vh - 80px);
+    min-height: calc(95vh - 80px);
 }
 
 section:first-of-type h1 {
-    margin-top: 2em;
+    margin-top: 2.75em;
 }
 
 .anchor-link {
