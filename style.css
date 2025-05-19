@@ -366,7 +366,7 @@ section.black.no-min-mobile {
 
 #runningText {
     user-select: none;
-    --spacing: 1.89ch;
+    --spacing: 1.8ch;
 }
 
 #runningText h1 {
@@ -421,6 +421,9 @@ section.black.no-min-mobile {
 
 #runningText #mask-11 {
     top: calc(var(--spacing) * 10);
+}
+#runningText #mask-12 {
+    top: calc(var(--spacing) * 11);
 }
 
 #tabImage,
