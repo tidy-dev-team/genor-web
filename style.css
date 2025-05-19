@@ -36,6 +36,7 @@ section.no-min {
 }
 
 section:first-of-type {
+    top: -2vh;
     min-height: calc(95vh - 80px);
 }
 
