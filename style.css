@@ -233,7 +233,9 @@ h1 {
     /* background-image: url(images/grid-footer.png); */
     background-color: transparent;
     isolation: unset;
-    min-height: 80vh;
+    min-height: 90vh;
+    padding-top: 200px;
+    padding-bottom: 0;
 }
 
 .move-beyond .subtitle {
