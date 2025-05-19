@@ -23,7 +23,7 @@ function scrollEnd(e) {
 
 function tabFunc(e) {
     tabTitles = ["Evaluate performance at every level", "See inside your workflows in real-time", "Catch drifts before they cause problems", "Build and iterate as a team—without friction"];
-    tabParas = ["Measure accuracy of agent units and the entire AI workflow, identify bottlenecks, and understand system behavior", "Inspect the data flow and performance at each step of the orchestration with advanced debugging and monitoring tools.", "Get alerted to changes in data patterns or logic through “explainable no outcome” alerts.", "Collaborate with live editing, commenting, and version control for datasets, agents, models, and workflows."]
+    tabParas = ["Measure accuracy of agent units and the entire AI workflow, identify bottlenecks,\n and understand system behavior", "Inspect the data flow and performance at each step of the orchestration with advanced debugging and monitoring tools.", "Get alerted to changes in data patterns or logic through\n “explainable no outcome” alerts.", "Collaborate with live editing, commenting, and version control for datasets,\n agents, models, and workflows."]
     tabImages = ["tab_01-min.png"];
     var x = e.target.parentElement.querySelectorAll(".tab");
     var i;
@@ -33,7 +33,7 @@ function tabFunc(e) {
     e.target.classList.add('active');
     document.getElementById("tabImageMobile").src = "images/tab_0" + window.tab + "-mobile-min.png";
     document.getElementById("tabImage").src = "images/tab_0" + window.tab + "-min.png";
-    document.getElementById("tabTitle").innerText = tabTitles[window.tab - 1];
+    document.getElementById("tabTitle").innerHTML = tabTitles[window.tab - 1];
     document.getElementById("tabPara").innerText = tabParas[window.tab - 1];
 }
 
