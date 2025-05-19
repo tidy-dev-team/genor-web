@@ -353,9 +353,9 @@ a:focus-visible::after {
     color: #d9d9d9;
 }
 
-.grid {
+/* .grid {
     isolation: unset;
-}
+} */
 
 #runningText {
     user-select: none;
