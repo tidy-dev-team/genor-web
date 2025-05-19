@@ -368,6 +368,7 @@ section.black.no-min-mobile {
 } */
 
 #runningText {
+    min-height: unset;
     user-select: none;
     --spacing: 1.8ch;
 }
