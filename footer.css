@@ -76,6 +76,15 @@ footer .social a {
     margin: 0 6px;
 }
 
+.links-flex a {
+    margin: 0 6px;
+}
+
+.links-flex a,
+.links-flex p {
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 600px) {
     footer nav {
         display: none;
