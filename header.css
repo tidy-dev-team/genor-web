@@ -23,6 +23,11 @@ header a {
     margin: 0 14px;
 }
 
+#useCases {
+    width: 100vw;
+    height: auto;
+}
+
 .logo {
     width: 144px;
     height: 42px;
