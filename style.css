@@ -696,8 +696,14 @@ body:has(.popup.hide) #wrapper {
         padding: 100px 0;
     }
 
+    .footer-wrapper {
+        padding: 30px !important;
+    }
+
     .move-beyond {
-        min-height: unset;
+        padding-top: 100px !important;
+        padding-bottom: 200px !important;
+        min-height: 50vh;
         background-position: top center;
         border-top: 10px solid #ffffff;
     }
