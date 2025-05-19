@@ -206,8 +206,13 @@ h6 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url(images/move-beyond-bg.png);
+    background: linear-gradient(0deg, #4D80E6 0%, #E5E4E6 100%);
+    /* background-image: url(images/move-beyond-bg.png); */
     background-color: transparent;
+}
+
+.move-beyond .subtitle {
+    color: black;
 }
 
 button {

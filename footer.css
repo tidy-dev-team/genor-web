@@ -1,4 +1,6 @@
 .footer-wrapper {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: fit-content;
     padding: 24px;
@@ -58,6 +60,7 @@ footer .social a {
 .twitter {
     background-image: url('data:image/svg+xml, <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9697 5.13281H26.6533L18.6058 14.3306L28.073 26.8467H20.6602L14.8543 19.2557L8.21094 26.8467H4.52515L13.1328 17.0086L4.05078 5.13281H11.6518L16.8998 12.0712L22.9697 5.13281ZM21.6769 24.6419H23.718L10.5427 7.2218H8.35236L21.6769 24.6419Z" fill="white"/></svg>');
 }
+
 @media only screen and (max-width: 600px) {
     footer nav {
         display: none;
