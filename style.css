@@ -113,6 +113,10 @@ h6 {
     padding-bottom: 0;
 }
 
+#scrollAnim+section {
+    padding-top: 0;
+}
+
 #stickyScroll {
     background-image: url(images/scroll-image_01-min.png);
     background-repeat: no-repeat;
@@ -120,10 +124,6 @@ h6 {
     background-size: 50%;
     overflow: hidden !important;
     transition: background-image 500ms linear 0s;
-}
-
-#scrollAnim+section {
-    padding-top: 0;
 }
 
 h3 {
