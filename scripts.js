@@ -179,3 +179,19 @@ function scrollIntoViewLoop() {
         window.notAnim = 0;
     }, 2000);
 }
+
+function navigateCollapse(e) {
+    console.log(e.target.parentElement.parentElement.id);
+
+    if (e.target.parentElement.parentElement.id == 'collapse_01') {
+        document.getElementById("stickyScroll").scrollTo(0, 0);
+    }
+
+    if (e.target.parentElement.parentElement.id == 'collapse_02') {
+        document.getElementById("stickyScroll").scrollTo(0, 1022);
+    }
+
+    if (e.target.parentElement.parentElement.id == 'collapse_03') {
+        document.getElementById("stickyScroll").scrollTo(0, 1561);
+    }
+}
