@@ -115,6 +115,7 @@ h6 {
     background-position: 90% 0%;
     background-size: 50%;
     overflow: hidden !important;
+    transition: background-image 500ms linear 0s;
 }
 
 h3 {
