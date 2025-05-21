@@ -153,9 +153,25 @@ function updateStickyScrollProgress() {
 
     const stickyProgress = Math.min(Math.max((Stickystart - stickyRect.top) / (Stickystart - stickyEnd), 0), 1);
 
-    console.log(`Scroll Progress: ${(stickyProgress * 100).toFixed(2)}%`);
+    // console.log(`Scroll Progress: ${(stickyProgress * 100).toFixed(2)}%`);
     // updateAnimationProgress(stickyProgress);
     window.stickyProgress = stickyProgress;
     document.getElementById('stickyScroll').scrollTo(0, ([stickyProgress * 6000] - 1000));
     document.getElementById('stickyScroll').style.marginTop = (stickyProgress * 1500) - 100 + "px";
+}
+
+function scrollIntoViewLoop() {
+  const element = document.getElementById("Production");
+  if (!element) {
+    console.warn("Element with ID 'Production' not found.");
+    return;
+  }
+
+  const interval = setInterval(() => {
+    element.scrollIntoView();
+  }, 100); // repeat every 100ms
+
+  setTimeout(() => {
+    clearInterval(interval); // stop after 2 seconds
+  }, 3000);
 }
