@@ -109,11 +109,17 @@ h6 {
     overflow: auto;
 }
 
+/* #scrollAnim {
+    position: sticky;
+    top: 0;
+} */
+
 #stickyScroll {
     background-image: url(images/scroll-image_01-min.png);
     background-repeat: no-repeat;
     background-position: 90% 0%;
     background-size: 50%;
+    overflow: hidden !important;
 }
 
 h3 {

@@ -8,17 +8,17 @@ function scrollEnd(e) {
             document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_01-min.png)";
         }
     }
-    if (e.target.scrollHeight - e.target.scrollTop < 820) {
-        console.log("done");
-        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
-        var x = e.target.querySelectorAll(".collapse");
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.padding = "0";
-        }
-        e.target.style.gap = "28px";
-        e.target.style.paddingBottom = "200px";
-    }
+    // if (e.target.scrollHeight - e.target.scrollTop < 820) {
+    //     // console.log("done");
+    //     document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
+    //     var x = e.target.querySelectorAll(".collapse");
+    //     var i;
+    //     for (i = 0; i < x.length; i++) {
+    //         x[i].style.padding = "0";
+    //     }
+    //     e.target.style.gap = "28px";
+    //     e.target.style.paddingBottom = "200px";
+    // }
 }
 
 function tabFunc(e) {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const progress = Math.min(Math.max((start - rect.top) / (start - end), 0), 1);
 
-        console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
+        // console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
         if ((progress * 100) > 85) {
             document.getElementById("starDiv").style.backgroundSize = "400%";
             setTimeout(() => {
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 700);
         }
         updateAnimationProgress(progress);
+        updateStickyScrollProgress();
     }
 
     document.getElementById("wrapper").addEventListener('scroll', updateScrollProgress);
@@ -140,4 +141,21 @@ function formBad(x) {
     document.getElementById("formFooter").style.display = "flex";
     document.getElementById("formFooter").innerText = 'Error! ' + x;
     document.getElementById("formSend").classList.remove('no-click');
+}
+
+function updateStickyScrollProgress() {
+    const stickyRect = document.getElementById('stickyScroll').getBoundingClientRect();
+    const windowStickyHeight = window.innerHeight;
+
+    const elementStickyHeight = stickyRect.height;
+    const Stickystart = windowStickyHeight;
+    const stickyEnd = -elementStickyHeight;
+
+    const stickyProgress = Math.min(Math.max((Stickystart - stickyRect.top) / (Stickystart - stickyEnd), 0), 1);
+
+    console.log(`Scroll Progress: ${(stickyProgress * 100).toFixed(2)}%`);
+    // updateAnimationProgress(stickyProgress);
+    window.stickyProgress = stickyProgress;
+    document.getElementById('stickyScroll').scrollTo(0, ([stickyProgress * 6000] - 1000));
+    document.getElementById('stickyScroll').style.marginTop = (stickyProgress * 1000) + "px";
 }
