@@ -157,5 +157,5 @@ function updateStickyScrollProgress() {
     // updateAnimationProgress(stickyProgress);
     window.stickyProgress = stickyProgress;
     document.getElementById('stickyScroll').scrollTo(0, ([stickyProgress * 6000] - 1000));
-    document.getElementById('stickyScroll').style.marginTop = (stickyProgress * 1500) + "px";
+    document.getElementById('stickyScroll').style.marginTop = (stickyProgress * 1500) - 100 + "px";
 }
