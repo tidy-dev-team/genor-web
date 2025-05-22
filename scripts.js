@@ -1,11 +1,11 @@
 function scrollEnd(e) {
-    if (e.target.scrollTop > 1500) {
+    if (document.getElementById("collapse_03").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 250) {
         document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
         document.getElementsByClassName("collapse")[0].style.opacity = "0.5";
         document.getElementsByClassName("collapse")[1].style.opacity = "0.5";
         document.getElementsByClassName("collapse")[2].style.opacity = "1";
     } else {
-        if (e.target.scrollTop > 750) {
+        if (document.getElementById("collapse_02").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 250) {
             document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_02-min.png)";
             document.getElementsByClassName("collapse")[0].style.opacity = "0.5";
             document.getElementsByClassName("collapse")[1].style.opacity = "1";
