@@ -1,17 +1,25 @@
 function scrollEnd(e) {
-    if (document.getElementById("collapse_03").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 260) {
-        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
+    if (document.getElementById("collapse_04").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top< 350) {
+        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_04-min.png)";
         document.getElementsByClassName("collapse")[0].style.opacity = "0.5";
         document.getElementsByClassName("collapse")[1].style.opacity = "0.5";
-        document.getElementsByClassName("collapse")[2].style.opacity = "1";
+        document.getElementsByClassName("collapse")[2].style.opacity = "0.5";
+        document.getElementsByClassName("collapse")[3].style.opacity = "1";
     } else {
-        if (document.getElementById("collapse_02").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 260) {
-            document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_02-min.png)";
+        if (document.getElementById("collapse_03").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top< 350) {
+            document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
             document.getElementsByClassName("collapse")[0].style.opacity = "0.5";
-            document.getElementsByClassName("collapse")[1].style.opacity = "1";
+            document.getElementsByClassName("collapse")[1].style.opacity = "0.5";
+            document.getElementsByClassName("collapse")[2].style.opacity = "1";
         } else {
-            document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_01-min.png)";
-            document.getElementsByClassName("collapse")[0].style.opacity = "1";
+            if (document.getElementById("collapse_02").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top< 350) {
+                document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_02-min.png)";
+                document.getElementsByClassName("collapse")[0].style.opacity = "0.5";
+                document.getElementsByClassName("collapse")[1].style.opacity = "1";
+            } else {
+                document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_01-min.png)";
+                document.getElementsByClassName("collapse")[0].style.opacity = "1";
+            }
         }
     }
     // if (e.target.scrollHeight - e.target.scrollTop < 820) {
