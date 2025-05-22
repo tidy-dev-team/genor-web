@@ -162,7 +162,6 @@ function updateStickyScrollProgress() {
     window.stickyProgress = stickyProgress;
     if (window.notAnim !== 1) {
         document.getElementById('stickyScroll').scrollTo(0, ([stickyProgress * 6000] - 1000));
-        // document.getElementById('stickyScroll').style.marginTop = (stickyProgress * 1500) - 100 + "px";
         document.getElementById('stickyScroll').style.transform = "translateY(" + ((stickyProgress * 1000) - 100) + "px)";
     }
 }
