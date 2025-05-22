@@ -169,7 +169,7 @@ function updateStickyScrollProgress() {
 
     window.stickyProgress = stickyProgress;
     if (window.notAnim !== 1) {
-        document.getElementById('stickyScroll').scrollTo(0, ([stickyProgress * 8000] - 1000));
+        document.getElementById('stickyScroll').scrollTo(0, ([stickyProgress * 9000] - 1000));
         document.getElementById('stickyScroll').style.transform = "translateY(" + ((stickyProgress * 1500) - 100) + "px)";
     }
 }
