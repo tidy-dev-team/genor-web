@@ -102,10 +102,10 @@ h6 {
     padding: 0 10vw;
     display: flex;
     flex-direction: column;
-    gap: 82vh;
+    gap: 90vh;
     min-height: 0;
     height: fit-content;
-    max-height: 82vh;
+    max-height: 90vh;
     overflow: auto;
 }
 
@@ -194,7 +194,7 @@ p {
 }
 
 .collapse:nth-of-type(4) {
-    top: 322px;
+    top: 332px;
     padding-bottom: calc(100vh - 500px);
 }
 
