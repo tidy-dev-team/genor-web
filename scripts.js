@@ -90,18 +90,18 @@ function mapRange(value, inMin, inMax, outMin = 0, outMax = 1) {
 }
 
 function updateAnimationProgress(progress) {
-    document.getElementById("mask-1").style.width = `${(mapRange(progress, 0.15, 0.20416667) * 100).toFixed(2)}%`;
-    document.getElementById("mask-2").style.width = `${(mapRange(progress, 0.20416667, 0.25833333) * 100).toFixed(2)}%`;
-    document.getElementById("mask-3").style.width = `${(mapRange(progress, 0.25833333, 0.3125) * 100).toFixed(2)}%`;
-    document.getElementById("mask-4").style.width = `${(mapRange(progress, 0.3125, 0.36666667) * 100).toFixed(2)}%`;
-    document.getElementById("mask-5").style.width = `${(mapRange(progress, 0.36666667, 0.42083333) * 100).toFixed(2)}%`;
-    document.getElementById("mask-6").style.width = `${(mapRange(progress, 0.42083333, 0.475) * 100).toFixed(2)}%`;
-    document.getElementById("mask-7").style.width = `${(mapRange(progress, 0.475, 0.52916667) * 100).toFixed(2)}%`;
-    document.getElementById("mask-8").style.width = `${(mapRange(progress, 0.52916667, 0.58333333) * 100).toFixed(2)}%`;
-    document.getElementById("mask-9").style.width = `${(mapRange(progress, 0.58333333, 0.6375) * 100).toFixed(2)}%`;
-    document.getElementById("mask-10").style.width = `${(mapRange(progress, 0.6375, 0.69166667) * 100).toFixed(2)}%`;
-    document.getElementById("mask-11").style.width = `${(mapRange(progress, 0.69166667, 0.74583333) * 100).toFixed(2)}%`;
-    document.getElementById("mask-12").style.width = `${(mapRange(progress, 0.74583333, 0.8) * 100).toFixed(2)}%`;
+    document.getElementById("mask-1").style.width = `${(mapRange(progress, 0.15, 0.22222222) * 100).toFixed(2)}%`;
+    document.getElementById("mask-2").style.width = `${(mapRange(progress, 0.22222222, 0.29444444) * 100).toFixed(2)}%`;
+    document.getElementById("mask-3").style.width = `${(mapRange(progress, 0.29444444, 0.36666667) * 100).toFixed(2)}%`;
+    document.getElementById("mask-4").style.width = `${(mapRange(progress, 0.36666667, 0.43888889) * 100).toFixed(2)}%`;
+    document.getElementById("mask-5").style.width = `${(mapRange(progress, 0.43888889, 0.51111111) * 100).toFixed(2)}%`;
+    document.getElementById("mask-6").style.width = `${(mapRange(progress, 0.51111111, 0.58333333) * 100).toFixed(2)}%`;
+    document.getElementById("mask-7").style.width = `${(mapRange(progress, 0.58333333, 0.65555556) * 100).toFixed(2)}%`;
+    document.getElementById("mask-8").style.width = `${(mapRange(progress, 0.65555556, 0.72777778) * 100).toFixed(2)}%`;
+    document.getElementById("mask-9").style.width = `${(mapRange(progress, 0.72777778, 0.8) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-10").style.width = `${(mapRange(progress, 0.6375, 0.69166667) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-11").style.width = `${(mapRange(progress, 0.69166667, 0.74583333) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-12").style.width = `${(mapRange(progress, 0.74583333, 0.8) * 100).toFixed(2)}%`;
 }
 
 function openPopup() {
