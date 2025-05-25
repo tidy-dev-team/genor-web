@@ -66,10 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
         if ((progress * 100) > 85) {
-            document.getElementById("starDiv").style.backgroundSize = "400%";
-            setTimeout(() => {
-                document.getElementById("starVideo").play();
-            }, 700);
+            if (document.body.offsetWidth > 600) {
+                document.getElementById("starVideo").controls = false;
+                document.getElementById("starDiv").style.backgroundSize = "400%";
+                setTimeout(() => {
+                    document.getElementById("starVideo").play();
+                }, 700);
+            }
         }
         updateAnimationProgress(progress);
         updateStickyScrollProgress();
@@ -228,9 +231,7 @@ function navigateCollapse(e) {
 function checkDevice() {
     if (document.body.offsetWidth < 600) {
         window.notAnim = 1;
-        document.getElementById("starVideo").controls = true;
     } else {
         window.notAnim = 0;
-        document.getElementById("starVideo").controls = false;
     }
 }
