@@ -110,6 +110,14 @@ h6 {
     overflow: auto;
 }
 
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: flex;
+}
+
 #scrollAnim {
     padding-bottom: 0;
 }
@@ -858,6 +866,14 @@ body:has(.popup.hide) #wrapper {
 
     .mobile-image {
         display: block;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+
+    .desktop-only {
+        display: none;
     }
 
     @keyframes fadeIn {
