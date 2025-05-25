@@ -876,6 +876,10 @@ body:has(.popup.hide) #wrapper {
         display: none;
     }
 
+    #starDiv {
+        display: none;
+    }
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
