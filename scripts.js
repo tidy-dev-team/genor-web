@@ -228,7 +228,9 @@ function navigateCollapse(e) {
 function checkDevice() {
     if (document.body.offsetWidth < 600) {
         window.notAnim = 1;
+        document.getElementById("starVideo").controls = true;
     } else {
         window.notAnim = 0;
+        document.getElementById("starVideo").controls = false;
     }
 }
