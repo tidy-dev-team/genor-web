@@ -294,11 +294,13 @@ button {
     font-weight: 500;
     cursor: pointer;
     opacity: 1;
+    visibility: visible;
     transition: background-color 300ms linear 0s, color 300ms linear 0s, opacity 300ms linear 0s;
 }
 
 .button-hidden {
     opacity: 0;
+    visibility: hidden;
 }
 
 a {
