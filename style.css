@@ -293,7 +293,12 @@ button {
     font-family: 'aeo-pro';
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 300ms linear 0s, color 300ms linear 0s;
+    opacity: 1;
+    transition: background-color 300ms linear 0s, color 300ms linear 0s, opacity 300ms linear 0s;
+}
+
+.button-hidden {
+    opacity: 0;
 }
 
 a {
