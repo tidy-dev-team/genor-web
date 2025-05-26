@@ -11,6 +11,10 @@
     scroll-behavior: smooth;
 }
 
+nav {
+    cursor: default;
+}
+
 section {
     position: relative;
     width: 100%;
