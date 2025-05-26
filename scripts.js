@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         updateAnimationProgress(progress);
-        updateStickyScrollProgress();
+        // updateStickyScrollProgress();
     }
 
     document.getElementById("wrapper").addEventListener('scroll', updateScrollProgress);
