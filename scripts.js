@@ -1,3 +1,10 @@
+function scrollCheck() {
+    if (document.getElementsByClassName("footer-wrapper")[0].getBoundingClientRect().top < window.innerHeight) {
+        document.querySelector("header").querySelector("button").classList.add("button-hidden");
+    } else {
+        document.querySelector("header").querySelector("button").classList.remove("button-hidden");
+    }
+}
 function scrollEnd(e) {
     if (document.getElementById("collapse_04").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 350) {
         document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_04-min.png)";
