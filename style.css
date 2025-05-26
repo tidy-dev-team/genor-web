@@ -107,7 +107,7 @@ h6 {
     padding-bottom: 200px;
     display: flex;
     flex-direction: column;
-    gap: 90vh;
+    gap: 32px;
     min-height: 0;
     height: fit-content;
     max-height: 90vh;
@@ -192,24 +192,23 @@ p {
 }
 
 .collapse {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     margin-left: 40px;
 }
 
-.collapse:nth-of-type(2) {
+/* .collapse:nth-of-type(2) {
     top: 124px;
 }
 
 .collapse:nth-of-type(3) {
     top: 232px;
-    /* padding-bottom: calc(100vh - 500px); */
 }
 
 .collapse:nth-of-type(4) {
     top: 332px;
     padding-bottom: calc(100vh - 500px);
-}
+} */
 
 .collapse h3::before {
     content: '';
