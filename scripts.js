@@ -5,42 +5,6 @@ function scrollCheck() {
         document.querySelector("header").querySelector("button").classList.remove("button-hidden");
     }
 }
-function scrollEnd(e) {
-    if (document.getElementById("collapse_04").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 350) {
-        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_04-min.png)";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].style.opacity = "1";
-    } else {
-        if (document.getElementById("collapse_03").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 350) {
-            document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
-            document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "0.5";
-            document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].style.opacity = "0.5";
-            document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].style.opacity = "1";
-        } else {
-            if (document.getElementById("collapse_02").getBoundingClientRect().top - document.getElementById("stickyScroll").getBoundingClientRect().top < 350) {
-                document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_02-min.png)";
-                document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "0.5";
-                document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].style.opacity = "1";
-            } else {
-                document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_01-min.png)";
-                document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "1";
-            }
-        }
-    }
-    // if (e.target.scrollHeight - e.target.scrollTop < 820) {
-    //     // console.log("done");
-    //     document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
-    //     var x = e.target.querySelectorAll(".collapse");
-    //     var i;
-    //     for (i = 0; i < x.length; i++) {
-    //         x[i].style.padding = "0";
-    //     }
-    //     e.target.style.gap = "28px";
-    //     e.target.style.paddingBottom = "200px";
-    // }
-}
 
 function tabFunc(e) {
     tabTitles = ["Evaluate performance at every level", "See inside your workflows in real-time", "Catch drifts before they cause problems", "Build and iterate as a team—without friction"];
@@ -240,5 +204,34 @@ function checkDevice() {
         window.notAnim = 1;
     } else {
         window.notAnim = 0;
+    }
+}
+
+function collapseFunc(e) {
+    if (e.target.parentElement.parentElement.parentElement.id == 'collapse_01') {
+        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_01-min.png)";
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].open = false;
+    }
+
+    if (e.target.parentElement.parentElement.parentElement.id == 'collapse_02') {
+        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_02-min.png)";
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].open = false;
+    }
+
+    if (e.target.parentElement.parentElement.parentElement.id == 'collapse_03') {
+        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].open = false;
+    }
+    if (e.target.parentElement.parentElement.parentElement.id == 'collapse_04') {
+        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_04-min.png)";
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].open = false;
+        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].open = false;
     }
 }

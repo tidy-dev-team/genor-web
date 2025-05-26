@@ -168,11 +168,17 @@ p {
 }
 
 details>summary {
+    opacity: 0.5;
     list-style: none;
+    transition: opacity 300ms linear 0s;
 }
 
 details>summary::-webkit-details-marker {
     display: none;
+}
+
+details:open>summary {
+    opacity: 1;
 }
 
 .collapse div {
