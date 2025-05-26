@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         updateAnimationProgress(progress);
-        // updateStickyScrollProgress();
     }
 
     document.getElementById("wrapper").addEventListener('scroll', updateScrollProgress);
@@ -70,9 +69,6 @@ function updateAnimationProgress(progress) {
     document.getElementById("mask-7").style.width = `${(mapRange(progress, 0.58333333, 0.65555556) * 100).toFixed(2)}%`;
     document.getElementById("mask-8").style.width = `${(mapRange(progress, 0.65555556, 0.72777778) * 100).toFixed(2)}%`;
     document.getElementById("mask-9").style.width = `${(mapRange(progress, 0.72777778, 0.8) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-10").style.width = `${(mapRange(progress, 0.6375, 0.69166667) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-11").style.width = `${(mapRange(progress, 0.69166667, 0.74583333) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-12").style.width = `${(mapRange(progress, 0.74583333, 0.8) * 100).toFixed(2)}%`;
 }
 
 function openPopup() {
@@ -103,15 +99,6 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-// const form = document.getElementById('popupForm');
-// form.addEventListener('submit', function (e) {
-//     if (!form.checkValidity()) {
-//         e.preventDefault();
-//     } else {
-//         sendPopup();
-//     }
-// });
-
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz2DDolkr1dO6iKo-uLIfqMMhN6W_oQ3TaVM68usqo514aOI5ry41dv-dZXbPnlT16x/exec';
 const form = document.forms['popupForm']
 form.addEventListener('submit', e => {
@@ -131,23 +118,6 @@ function formBad(x) {
     document.getElementById("formSend").classList.remove('no-click');
 }
 
-function updateStickyScrollProgress() {
-    const stickyRect = document.getElementById('stickyScroll').getBoundingClientRect();
-    const windowStickyHeight = window.innerHeight;
-
-    const elementStickyHeight = stickyRect.height;
-    const Stickystart = windowStickyHeight;
-    const stickyEnd = -elementStickyHeight;
-
-    const stickyProgress = Math.min(Math.max((Stickystart - stickyRect.top) / (Stickystart - stickyEnd), 0), 1);
-
-    window.stickyProgress = stickyProgress;
-    if (window.notAnim !== 1) {
-        document.getElementById('stickyScroll').scrollTo(0, ([stickyProgress * 9000] - 1000));
-        document.getElementById('stickyScroll').style.transform = "translateY(" + ((stickyProgress * 1500) - 100) + "px)";
-    }
-}
-
 function scrollIntoViewLoop() {
     const element = document.getElementById("Production");
     if (!element) {
@@ -159,44 +129,6 @@ function scrollIntoViewLoop() {
     const interval = setInterval(() => {
         window.notAnim = 0;
     }, 2000);
-}
-
-function navigateCollapse(e) {
-    // console.log(e.target.parentElement.parentElement.id);
-
-    if (e.target.parentElement.parentElement.id == 'collapse_01') {
-        // document.getElementById("stickyScroll").scrollTo(0, 0);
-        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_01-min.png)";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "1";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].style.opacity = "0.5";
-    }
-
-    if (e.target.parentElement.parentElement.id == 'collapse_02') {
-        // document.getElementById("stickyScroll").scrollTo(0, 1022);
-        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_02-min.png)";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].style.opacity = "1";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].style.opacity = "0.5";
-    }
-
-    if (e.target.parentElement.parentElement.id == 'collapse_03') {
-        // document.getElementById("stickyScroll").scrollTo(0, 1561);
-        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_03-min.png)";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].style.opacity = "1";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].style.opacity = "0.5";
-    }
-    if (e.target.parentElement.parentElement.id == 'collapse_04') {
-        document.getElementById("stickyScroll").style.backgroundImage = "url(images/scroll-image_04-min.png)";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[0].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[1].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].style.opacity = "0.5";
-        document.getElementById("stickyScroll").getElementsByClassName("collapse")[3].style.opacity = "1";
-    }
 }
 
 function checkDevice() {
