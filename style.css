@@ -167,6 +167,14 @@ p {
     margin-bottom: 20px;
 }
 
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
 .collapse div {
     color: #929292;
     max-width: 340px;
