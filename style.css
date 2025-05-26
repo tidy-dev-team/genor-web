@@ -201,7 +201,7 @@ details:open>summary {
     color: #ffffff;
 }
 
-.collapse {
+.collapse summary {
     cursor: pointer;
 }
 
