@@ -933,6 +933,42 @@ body:has(.popup.hide) #wrapper {
         max-width: 80vw;
     }
 
+    .move-beyond h1 {
+        font-size: 40px;
+    }
+
+    img.full-width {
+        width: calc(100vw - 40px) !important;
+        max-width: calc(100vw - 40px) !important;
+    }
+
+    .px-185-30 {
+        padding: 20px;
+        width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+    }
+
+    .px-185,
+    .px-185 .full-width {
+        padding: 20px;
+        width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+    }
+
+    .px-185 h1.full-width {
+        padding: 0;
+        font-size: 50px;
+    }
+
+    #circles {
+        transform: translateX(20px);
+        width: calc(100vw - 40px);
+    }
+
+    .bigger-h2 {
+        font-size: 30px;
+    }
+
     .popup {
         width: 100%;
         max-width: unset;
