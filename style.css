@@ -735,14 +735,31 @@ body:has(.popup.hide) #wrapper {
     align-items: center;
     gap: 4px;
 }
-.person-card img{
+
+.cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.person-card {
+    --cardWidth: 23vw;
+    width: var(--cardWidth);
+}
+
+.person-card img {
     margin-bottom: 22px;
-    width: 20vw;
-    height: 20vw;
+    width: var(--cardWidth);
+    height: var(--cardWidth);
     border-radius: 8px;
 }
+
 .person-card p {
     margin: 0;
+}
+
+.person-card p:last-of-type {
+    color: #7E7E7E;
 }
 
 @keyframes rotate {
