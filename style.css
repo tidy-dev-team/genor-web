@@ -871,10 +871,6 @@ body:has(.popup.hide) #wrapper {
         padding: 100px 0;
     }
 
-    .footer-wrapper {
-        padding: 30px !important;
-    }
-
     .move-beyond {
         padding-top: 100px !important;
         padding-bottom: 200px !important;
@@ -948,11 +944,15 @@ body:has(.popup.hide) #wrapper {
         max-width: calc(100vw - 40px);
     }
 
-    .px-185,
     .px-185 .full-width {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .px-185 {
         padding: 20px;
-        width: calc(100vw - 40px);
-        max-width: calc(100vw - 40px);
+        width: 100vw;
+        max-width: 100vw;
     }
 
     .px-185 h1.full-width {
