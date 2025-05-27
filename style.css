@@ -255,6 +255,7 @@ h1 {
 
 .bigger-h1 {
     font-size: 100px;
+    line-height: 0.95;
 }
 
 .mt-1 {
