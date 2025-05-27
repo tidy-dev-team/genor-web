@@ -212,3 +212,7 @@ function weAnimate(progress) {
         }
     }
 }
+
+function goHome() {
+    window.location = "index.html";
+}
