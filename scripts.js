@@ -194,15 +194,18 @@ function weScroll() {
 
 function weAnimate(progress) {
     if ((progress * 100).toFixed(2) > 40) {
-        document.getElementById("headtitle").innerText = "Workflows should improve over time, not degrade";
-        document.getElementById("headimage").src = "images/icon-gr_03-min.png";
+        document.getElementById("cardtitle_1").style.opacity = 0;
+        document.getElementById("cardtitle_2").style.opacity = 0;
+        document.getElementById("cardtitle_3").style.opacity = 1;
     } else {
         if ((progress * 100).toFixed(2) > 35) {
-            document.getElementById("headtitle").innerText = "Every decision must be transparent and traceable";
-            document.getElementById("headimage").src = "images/icon-gr_02-min.png";
+            document.getElementById("cardtitle_1").style.opacity = 0;
+            document.getElementById("cardtitle_2").style.opacity = 1;
+            document.getElementById("cardtitle_3").style.opacity = 0;
         } else {
-            document.getElementById("headtitle").innerText = "AI should say “I don’t know” when it’s unsure";
-            document.getElementById("headimage").src = "images/icon-gr_01-min.png";
+            document.getElementById("cardtitle_1").style.opacity = 1;
+            document.getElementById("cardtitle_2").style.opacity = 0;
+            document.getElementById("cardtitle_3").style.opacity = 0;
         }
     }
 }

@@ -772,11 +772,15 @@ body:has(.popup.hide) #wrapper {
     align-items: center;
 }
 
-#headtitle {
+.cardtitle {
+    position: absolute;
+}
+
+.headtitle {
     height: fit-content;
 }
 
-#headimage {
+.headimage {
     width: 360px;
     height: 360px;
 }
