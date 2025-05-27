@@ -774,6 +774,7 @@ body:has(.popup.hide) #wrapper {
 
 .cardtitle {
     position: absolute;
+    transition: opacity 300ms linear 0s;
 }
 
 .headtitle {
