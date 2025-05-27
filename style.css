@@ -39,6 +39,10 @@ section.no-min {
     min-height: 0;
 }
 
+#scrollSection {
+    padding-top: 60px;
+}
+
 section:first-of-type {
     top: -2vh;
     min-height: calc(95vh - 80px);
