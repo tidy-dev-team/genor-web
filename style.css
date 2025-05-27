@@ -280,6 +280,8 @@ h1 {
 
 img.full-width {
     z-index: 2;
+    width: calc(100vw - 60px) !important;
+    max-width: calc(100vw - 60px) !important;
 }
 
 .first {
