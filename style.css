@@ -736,14 +736,18 @@ body:has(.popup.hide) #wrapper {
     gap: 4px;
 }
 
+.cards-wrapper {
+    gap: 132px
+}
+
 .cards {
+    --cardWidth: 21vw;
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
 }
 
 .person-card {
-    --cardWidth: 23vw;
     width: var(--cardWidth);
     z-index: 2;
 }
@@ -928,6 +932,16 @@ body:has(.popup.hide) #wrapper {
 
     #starDiv {
         display: none;
+    }
+
+    .cards-wrapper {
+        gap: 24px
+    }
+
+    .cards {
+        --cardWidth: 90vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     @keyframes fadeIn {
