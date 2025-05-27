@@ -41,6 +41,7 @@ section.no-min {
 
 #scrollSection {
     padding-top: 60px;
+    min-height: unset;
 }
 
 section:first-of-type {
@@ -299,6 +300,14 @@ img.full-width {
     max-width: calc(100vw - 370px);
 }
 
+.px-185-30 {
+    box-sizing: border-box;
+    padding-left: 185px;
+    padding-right: 30px;
+    width: 100vw;
+    max-width: 100vw;
+}
+
 .first {
     min-height: 0 !important;
 }
@@ -446,9 +455,9 @@ section.black.no-min-mobile {
     height: auto;
 }
 
-.grid h6 {
+/* .grid h6 {
     margin-top: 115px;
-}
+} */
 
 .black h6 {
     color: #d9d9d9;
@@ -768,11 +777,13 @@ body:has(.popup.hide) #wrapper {
 }
 
 .cards-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
     gap: 132px
 }
 
 .cards {
-    --cardWidth: 21vw;
+    --cardWidth: 23.15vw;
     display: flex;
     gap: 16px;
     row-gap: 90px;
@@ -793,6 +804,7 @@ body:has(.popup.hide) #wrapper {
 
 .person-card p {
     margin: 0;
+    margin-left: 27px;
 }
 
 .person-card p:last-of-type {
@@ -826,7 +838,7 @@ body:has(.popup.hide) #wrapper {
 #headnum {
     font-size: 42px;
     text-align: center;
-    margin-top: 400px;
+    margin-top: 320px;
     color: #333333;
     font-family: 'aeo-pro', sans-serif;
 }
