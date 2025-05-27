@@ -786,6 +786,18 @@ body:has(.popup.hide) #wrapper {
     height: 360px;
 }
 
+#headnum {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 400px;
+    color: #7E7E7E;
+    font-family: 'aeo-pro', sans-serif;
+}
+
+#headnum span {
+    color: #333333;
+}
+
 @keyframes rotate {
     to {
         --angle: 360deg;
