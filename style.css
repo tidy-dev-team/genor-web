@@ -27,6 +27,10 @@ section {
     isolation: isolate;
 }
 
+#scrollSection {
+    top: 300px;
+}
+
 section {
     display: flex;
     align-items: center;
@@ -279,7 +283,7 @@ img.full-width {
 }
 
 .mt-1 {
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 .mt-2 {

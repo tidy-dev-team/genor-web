@@ -194,17 +194,20 @@ function weScroll() {
 
 function weAnimate(progress) {
     if ((progress * 100).toFixed(2) > 40) {
+        // document.getElementById("scrollSection").style.position = "relative";
         document.getElementById("cardtitle_1").style.opacity = 0;
         document.getElementById("cardtitle_2").style.opacity = 0;
         document.getElementById("cardtitle_3").style.opacity = 1;
         document.getElementById("headnum").querySelector("span").innerText = "3";
     } else {
         if ((progress * 100).toFixed(2) > 35) {
+            // document.getElementById("scrollSection").style.position = "sticky";
             document.getElementById("cardtitle_1").style.opacity = 0;
             document.getElementById("cardtitle_2").style.opacity = 1;
             document.getElementById("cardtitle_3").style.opacity = 0;
             document.getElementById("headnum").querySelector("span").innerText = "2";
         } else {
+            // document.getElementById("scrollSection").style.position = "sticky";
             document.getElementById("cardtitle_1").style.opacity = 1;
             document.getElementById("cardtitle_2").style.opacity = 0;
             document.getElementById("cardtitle_3").style.opacity = 0;
