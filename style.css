@@ -976,6 +976,11 @@ body:has(.popup.hide) #wrapper {
         row-gap: 40px;
     }
 
+    .bigger-h1 {
+        font-size: 56px;
+        line-height: 0.95;
+    }
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
