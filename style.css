@@ -790,12 +790,12 @@ body:has(.popup.hide) #wrapper {
     font-size: 42px;
     text-align: center;
     margin-top: 400px;
-    color: #7E7E7E;
+    color: #333333;
     font-family: 'aeo-pro', sans-serif;
 }
 
 #headnum span {
-    color: #333333;
+    color: #7E7E7E;
 }
 
 @keyframes rotate {
