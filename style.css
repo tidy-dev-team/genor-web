@@ -27,10 +27,6 @@ section {
     isolation: isolate;
 }
 
-#scrollSection {
-    top: 300px;
-}
-
 section {
     display: flex;
     align-items: center;
@@ -62,6 +58,10 @@ section.black {
 .bigger-title {
     font-size: 80px;
     text-wrap: unset;
+}
+
+#circles {
+    width: 48vw;
 }
 
 h1 {
@@ -806,11 +806,17 @@ body:has(.popup.hide) #wrapper {
 
 .headtitle {
     height: fit-content;
+    max-width: 50vw;
 }
 
 .headimage {
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
+    transform: translateX(-50px);
+}
+
+.cardtitle {
+    justify-content: space-between;
 }
 
 #headnum {
