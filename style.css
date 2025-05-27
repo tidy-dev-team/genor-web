@@ -315,7 +315,7 @@ img.full-width {
 .sec {
     min-height: 0 !important;
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 120px !important;
 }
 
 .mt-1 {
