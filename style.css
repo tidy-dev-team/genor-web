@@ -59,6 +59,11 @@ section.black {
     z-index: 1;
 }
 
+.bigger-title {
+    font-size: 80px;
+    text-wrap: unset;
+}
+
 h1 {
     letter-spacing: -1px;
     font-size: 64px;
@@ -74,10 +79,11 @@ h2 {
 }
 
 h6 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'aeo-mono', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
+    color: #7E7E7E;
 }
 
 .white-text {
@@ -273,7 +279,7 @@ h1 {
 }
 
 .bigger-h2 {
-    font-size: 42px;
+    font-size: 54px;
     line-height: 1.2;
     font-weight: 400;
 }
@@ -284,12 +290,19 @@ img.full-width {
     max-width: calc(100vw - 60px) !important;
 }
 
+.px-185 .full-width {
+    width: calc(100vw - 370px);
+    max-width: calc(100vw - 370px);
+}
+
 .first {
     min-height: 0 !important;
 }
 
 .sec {
+    min-height: 0 !important;
     padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .mt-1 {
