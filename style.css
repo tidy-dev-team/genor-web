@@ -735,6 +735,15 @@ body:has(.popup.hide) #wrapper {
     align-items: center;
     gap: 4px;
 }
+.person-card img{
+    margin-bottom: 22px;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 8px;
+}
+.person-card p {
+    margin: 0;
+}
 
 @keyframes rotate {
     to {
