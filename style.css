@@ -1078,6 +1078,32 @@ body:has(.popup.hide) #wrapper {
         line-height: 0.95;
     }
 
+    .cardtitle {
+        opacity: 1 !important;
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: 100% !important;
+        max-width: unset !important;
+        padding: 0 !important;
+    }
+
+    .headimage {
+        width: 160px;
+        height: 160px;
+        transform: unset;
+    }
+
+    .headtitle {
+        max-width: unset;
+        width: 100%;
+        font-size: 26px;
+    }
+
+    #headnum {
+        display: none;
+    }
+
     @keyframes fadeIn {
         0% {
             opacity: 0;

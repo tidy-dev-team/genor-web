@@ -188,22 +188,24 @@ function weScroll() {
 }
 
 function weAnimate(progress) {
-    if ((progress * 100).toFixed(2) > 55) {
-        document.getElementById("cardtitle_1").style.opacity = 0;
-        document.getElementById("cardtitle_2").style.opacity = 0;
-        document.getElementById("cardtitle_3").style.opacity = 1;
-        document.getElementById("headnum").querySelector("span").innerText = "3";
-    } else {
-        if ((progress * 100).toFixed(2) > 40) {
+    if (document.body.offsetWidth > 600) {
+        if ((progress * 100).toFixed(2) > 55) {
             document.getElementById("cardtitle_1").style.opacity = 0;
-            document.getElementById("cardtitle_2").style.opacity = 1;
-            document.getElementById("cardtitle_3").style.opacity = 0;
-            document.getElementById("headnum").querySelector("span").innerText = "2";
-        } else {
-            document.getElementById("cardtitle_1").style.opacity = 1;
             document.getElementById("cardtitle_2").style.opacity = 0;
-            document.getElementById("cardtitle_3").style.opacity = 0;
-            document.getElementById("headnum").querySelector("span").innerText = "1";
+            document.getElementById("cardtitle_3").style.opacity = 1;
+            document.getElementById("headnum").querySelector("span").innerText = "3";
+        } else {
+            if ((progress * 100).toFixed(2) > 40) {
+                document.getElementById("cardtitle_1").style.opacity = 0;
+                document.getElementById("cardtitle_2").style.opacity = 1;
+                document.getElementById("cardtitle_3").style.opacity = 0;
+                document.getElementById("headnum").querySelector("span").innerText = "2";
+            } else {
+                document.getElementById("cardtitle_1").style.opacity = 1;
+                document.getElementById("cardtitle_2").style.opacity = 0;
+                document.getElementById("cardtitle_3").style.opacity = 0;
+                document.getElementById("headnum").querySelector("span").innerText = "1";
+            }
         }
     }
 }
