@@ -744,6 +744,7 @@ body:has(.popup.hide) #wrapper {
     --cardWidth: 21vw;
     display: flex;
     gap: 16px;
+    row-gap: 90px;
     flex-wrap: wrap;
 }
 
@@ -942,6 +943,7 @@ body:has(.popup.hide) #wrapper {
         --cardWidth: 90vw;
         flex-direction: column;
         flex-wrap: nowrap;
+        row-gap: 40px;
     }
 
     @keyframes fadeIn {
