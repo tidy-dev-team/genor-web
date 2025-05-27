@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrapper" onscroll="weScroll();" onresize="weScroll();">
         <header>
             <div class="logo" onclick="scrollToTop();checkDevice();"></div>
             <nav>
@@ -74,9 +74,19 @@
             </div>
         </section>
 
+        <section id="scrollSection">
+            <div class="flex full-width">
+                <div class="flex column full-width">
+                    <h6 class="left-align">We believe</h6>
+                </div>
+            </div>
+        </section>
+
         <section class="grid" style="isolation: unset;">
             <div class="flex full-width cards-wrapper">
-                <h6 class="left-align"><nobr>Leadership team</nobr></h6>
+                <h6 class="left-align">
+                    <nobr>Leadership team</nobr>
+                </h6>
                 <div class="cards">
                     <div class="person-card">
                         <img src="images/Genor_person_01-min.png" />

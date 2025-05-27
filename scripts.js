@@ -167,3 +167,39 @@ function collapseFunc(e) {
         document.getElementById("stickyScroll").getElementsByClassName("collapse")[2].open = false;
     }
 }
+
+function weScroll() {
+    const elementSection = document.getElementById('scrollSection');
+    const rect = elementSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    const elementHeight = rect.height;
+    const start = windowHeight;
+    const end = -elementHeight;
+
+    const progress = Math.min(Math.max((start - rect.top) / (start - end), 0), 1);
+
+    console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
+    if ((progress * 100) > 85) {
+        if (document.body.offsetWidth > 600) {
+            // document.getElementById("starVideo").controls = false;
+            // document.getElementById("starDiv").style.backgroundSize = "400%";
+            setTimeout(() => {
+                // document.getElementById("starVideo").play();
+            }, 700);
+        }
+    }
+    weAnimate(progress);
+}
+
+function weAnimate(progress) {
+    // document.getElementById("mask-1").style.width = `${(mapRange(progress, 0.15, 0.22222222) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-2").style.width = `${(mapRange(progress, 0.22222222, 0.29444444) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-3").style.width = `${(mapRange(progress, 0.29444444, 0.36666667) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-4").style.width = `${(mapRange(progress, 0.36666667, 0.43888889) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-5").style.width = `${(mapRange(progress, 0.43888889, 0.51111111) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-6").style.width = `${(mapRange(progress, 0.51111111, 0.58333333) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-7").style.width = `${(mapRange(progress, 0.58333333, 0.65555556) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-8").style.width = `${(mapRange(progress, 0.65555556, 0.72777778) * 100).toFixed(2)}%`;
+    // document.getElementById("mask-9").style.width = `${(mapRange(progress, 0.72777778, 0.8) * 100).toFixed(2)}%`;
+}
