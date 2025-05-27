@@ -12,6 +12,13 @@ header {
     background: rgba(255, 255, 255, 0.60);
     backdrop-filter: blur(20px);
     z-index: 9;
+    visibility: visible;
+    transition: opacity 300ms linear 0s, visibility 300ms linear 0s;
+}
+
+.header-hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 header a {

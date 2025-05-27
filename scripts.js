@@ -1,8 +1,8 @@
 function scrollCheck() {
     if (document.getElementsByClassName("footer-wrapper")[0].getBoundingClientRect().top < window.innerHeight) {
-        document.querySelector("header").querySelector("button").classList.add("button-hidden");
+        document.querySelector("header").classList.add("header-hidden");
     } else {
-        document.querySelector("header").querySelector("button").classList.remove("button-hidden");
+        document.querySelector("header").classList.remove("header-hidden");
     }
 }
 
