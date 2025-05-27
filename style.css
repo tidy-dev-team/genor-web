@@ -745,6 +745,7 @@ body:has(.popup.hide) #wrapper {
 .person-card {
     --cardWidth: 23vw;
     width: var(--cardWidth);
+    z-index: 2;
 }
 
 .person-card img {
