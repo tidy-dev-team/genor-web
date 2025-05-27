@@ -282,6 +282,14 @@ img.full-width {
     z-index: 2;
 }
 
+.first {
+    min-height: 0 !important;
+}
+
+.sec {
+    padding-top: 0 !important;
+}
+
 .mt-1 {
     margin-top: .5em;
 }
