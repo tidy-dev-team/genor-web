@@ -335,10 +335,15 @@ img.full-width {
     isolation: unset;
     min-height: 80vh;
     padding: 0 !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 250px !important;
     justify-content: center;
 }
-
+.move-beyond h1{
+    width: 100vw;
+    max-width: 100vw;
+    font-size: 82px;
+    margin-bottom: 8px;
+}
 .move-beyond .subtitle {
     color: #333333;
 }
