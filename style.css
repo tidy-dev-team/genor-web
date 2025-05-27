@@ -768,6 +768,19 @@ body:has(.popup.hide) #wrapper {
     color: #7E7E7E;
 }
 
+.v-center {
+    align-items: center;
+}
+
+#headtitle {
+    height: fit-content;
+}
+
+#headimage {
+    width: 360px;
+    height: 360px;
+}
+
 @keyframes rotate {
     to {
         --angle: 360deg;

@@ -193,13 +193,16 @@ function weScroll() {
 }
 
 function weAnimate(progress) {
-    // document.getElementById("mask-1").style.width = `${(mapRange(progress, 0.15, 0.22222222) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-2").style.width = `${(mapRange(progress, 0.22222222, 0.29444444) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-3").style.width = `${(mapRange(progress, 0.29444444, 0.36666667) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-4").style.width = `${(mapRange(progress, 0.36666667, 0.43888889) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-5").style.width = `${(mapRange(progress, 0.43888889, 0.51111111) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-6").style.width = `${(mapRange(progress, 0.51111111, 0.58333333) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-7").style.width = `${(mapRange(progress, 0.58333333, 0.65555556) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-8").style.width = `${(mapRange(progress, 0.65555556, 0.72777778) * 100).toFixed(2)}%`;
-    // document.getElementById("mask-9").style.width = `${(mapRange(progress, 0.72777778, 0.8) * 100).toFixed(2)}%`;
+    if ((progress * 100).toFixed(2) > 40) {
+        document.getElementById("headtitle").innerText = "Workflows should improve over time, not degrade";
+        document.getElementById("headimage").src = "images/icon-gr_03-min.png";
+    } else {
+        if ((progress * 100).toFixed(2) > 35) {
+            document.getElementById("headtitle").innerText = "Every decision must be transparent and traceable";
+            document.getElementById("headimage").src = "images/icon-gr_02-min.png";
+        } else {
+            document.getElementById("headtitle").innerText = "AI should say “I don’t know” when it’s unsure";
+            document.getElementById("headimage").src = "images/icon-gr_01-min.png";
+        }
+    }
 }
