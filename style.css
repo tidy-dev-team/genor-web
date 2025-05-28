@@ -344,6 +344,15 @@ img.full-width {
     margin-top: 1.8em;
 }
 
+.pt-1 {
+    padding-top: 0;
+    margin-top: -50px;
+}
+
+#circles {
+    padding-bottom: 120px;
+}
+
 .move-beyond {
     background-repeat: no-repeat;
     background-size: contain;
