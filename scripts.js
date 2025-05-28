@@ -24,6 +24,11 @@ function tabFunc(e) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const element = document.getElementById('runningText');
+    const wrapper = document.getElementById("wrapper");
+    const starVideo = document.getElementById("starVideo");
+    const starDiv = document.getElementById("starDiv");
+
+    if (!element || !wrapper || !starVideo || !starDiv) return;
 
     function updateScrollProgress() {
         const rect = element.getBoundingClientRect();
@@ -38,18 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
         if ((progress * 100) > 85) {
             if (document.body.offsetWidth > 600) {
-                document.getElementById("starVideo").controls = false;
-                document.getElementById("starDiv").style.backgroundSize = "400%";
+                starVideo.controls = false;
+                starDiv.style.backgroundSize = "400%";
                 setTimeout(() => {
-                    document.getElementById("starVideo").play();
+                    starVideo.play();
                 }, 700);
             }
         }
         updateAnimationProgress(progress);
     }
 
-    document.getElementById("wrapper").addEventListener('scroll', updateScrollProgress);
-    document.getElementById("wrapper").addEventListener('resize', updateScrollProgress);
+    wrapper.addEventListener('scroll', updateScrollProgress);
+    wrapper.addEventListener('resize', updateScrollProgress);
     updateScrollProgress();
 });
 
