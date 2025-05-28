@@ -364,8 +364,9 @@ img.full-width {
     isolation: unset;
     min-height: 80vh;
     padding: 0 !important;
-    padding-bottom: 250px !important;
+    padding-bottom: 194px !important;
     justify-content: center;
+    align-items: center;
 }
 
 .move-beyond h1 {

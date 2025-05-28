@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div id="wrapper" onscroll="weScroll();scrollCheck();" onresize="weScroll();">
+    <div id="wrapper" onscroll="scrollCheck();">
         <header>
             <div class="logo" onclick="scrollToTop();checkDevice();"></div>
             <nav>
@@ -166,7 +166,9 @@
 
         <section class="move-beyond">
             <h1 class="all-caps">Ready to move beyond AI<br />experimentation?</h1>
-            <p class="subtitle less-margin bigger-p">Experience the power of reliable, explainable, and production-ready
+            <p class="subtitle less-margin bigger-p" style="text-wrap: nowrap;width: unset;">Experience the power of
+                reliable,
+                explainable, and production-ready<br />
                 agentic AI with
                 Genor.</p>
             <button class="primary-button" onclick="openPopup();">Book a demo</button>
