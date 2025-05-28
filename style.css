@@ -952,6 +952,14 @@ body:has(.popup.hide) #wrapper {
         font-size: 14px;
     }
 
+    .h1-81 {
+        font-size: 32px;
+    }
+
+    .size {
+        width: unset !important;
+    }
+
     .grid::after {
         aspect-ratio: 1 / 2;
         bottom: 0;
