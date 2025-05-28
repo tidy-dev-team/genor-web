@@ -209,6 +209,10 @@ details:open>summary {
     max-height: 200px;
 }
 
+.mobile-only .collapse {
+    max-height: unset;
+}
+
 .collapse div {
     color: #929292;
     max-width: 420px;
