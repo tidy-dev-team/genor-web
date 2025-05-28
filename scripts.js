@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
         if (document.body.offsetWidth > 600) {
-            if ((progress * 100) > 85) {
+            if ((progress * 100) > 75) {
                 starVideo.controls = false;
                 starDiv.style.backgroundSize = "400%";
                 setTimeout(() => {
