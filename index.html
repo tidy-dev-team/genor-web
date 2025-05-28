@@ -357,26 +357,33 @@
     <script src="scripts.js"></script>
 
     <script>
-        const r = new rive.Rive({
-            src: "anim/genor_hero.riv",
-            canvas: document.getElementById("canvas"),
-            autoplay: true,
-            // artboard: "Arboard",
-            stateMachines: "State Machine breathing",
-            // onLoad: () => {
-            //     r.resizeDrawingSurfaceToCanvas();
-            // },
-        });
+        let riveData;
+        fetch("anim/genor_showcases.riv")
+            .then(response => response.arrayBuffer())
+            .then(buffer => {
+                riveData = buffer;
 
-        const s = new rive.Rive({
-            src: "anim/genor_showcases.riv",
-            canvas: document.getElementById("useCases"),
-            autoplay: true,
-            stateMachines: "State Machine 1",
-            // onLoad: () => {
-            //     s.resizeDrawingSurfaceToCanvas();
-            // },
-        });
+                const r = new rive.Rive({
+                    src: "anim/genor_hero.riv",
+                    canvas: document.getElementById("canvas"),
+                    autoplay: true,
+                    // artboard: "Arboard",
+                    stateMachines: "State Machine breathing",
+                    // onLoad: () => {
+                    //     r.resizeDrawingSurfaceToCanvas();
+                    // },
+                });
+
+                const s = new rive.Rive({
+                    buffer: riveData,
+                    canvas: document.getElementById("useCases"),
+                    autoplay: true,
+                    stateMachines: "State Machine 1",
+                    // onLoad: () => {
+                    //     s.resizeDrawingSurfaceToCanvas();
+                    // },
+                });
+            })
     </script>
 
 </body>
