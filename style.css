@@ -1002,6 +1002,10 @@ body:has(.popup.hide) #wrapper {
         overflow: auto;
     }
 
+    .tab {
+        font-size: 14px;
+    }
+
     .close-button {
         top: 0;
         right: 0;
