@@ -27,15 +27,24 @@
 <body>
     <div id="wrapper" onscroll="weScroll();scrollCheck();" onresize="weScroll();">
         <header>
-            <!-- FIX: Mobile menu should be here -->
-            <div class="logo" onclick="goHome();"></div>
-            <nav class="header-hidden">
+            <div class="logo" onclick="scrollToTop();checkDevice();"></div>
+            <nav>
                 <a href="#Cases">Use Cases</a>
                 <a href="#GenOne">GenOne</a>
                 <a href="#XAI">Enterprise XAI</a>
                 <a href="#Production" id="prodLink" onclick="scrollIntoViewLoop();">Production-grade</a>
             </nav>
             <button class="primary-button" onclick="openPopup();">Book a demo</button>
+            <details class="mobile-only">
+                <summary>
+                    III
+                </summary>
+                <div class="mobile-menu">
+                    <a href="#">Home</a>
+                    <a href="company.html">Company</a>
+                    <a href="#">Careers</a>
+                </div>
+            </details>
         </header>
         <section class="no-click first">
             <h1 class="mt-1 bigger-h1 all-caps">
@@ -163,9 +172,9 @@
             <button class="primary-button" onclick="openPopup();">Book a demo</button>
             <div class="footer-wrapper">
                 <footer>
-                    <div class="logo" onclick="goHome();"></div>
+                    <div class="logo" onclick="scrollToTop();"></div>
                     <nav>
-                        <a href="index.html">Home</a>
+                        <a href="#">Home</a>
                         <a href="company.html">Company</a>
                         <a href="#">Careers</a>
                     </nav>
@@ -176,17 +185,6 @@
                         <a href="https://x.com/Genor_AI" target="_blank">
                             <div class="icon twitter"></div>
                         </a>
-
-                        <details class="mobile-only">
-                            <summary>
-                                III
-                            </summary>
-                            <div class="mobile-menu">
-                                <a href="index.html">Home</a>
-                                <a href="company.html">Company</a>
-                                <a href="#">Careers</a>
-                            </div>
-                        </details>
                     </div>
                 </footer>
                 <div class="flex links-flex">
