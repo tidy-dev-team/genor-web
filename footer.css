@@ -85,6 +85,32 @@ footer .social a {
     font-size: 12px;
 }
 
+footer details {
+    color: #333333 !important;
+}
+
+footer summary {
+    position: relative;
+    color: #333333 !important;
+    opacity: 1;
+    font-size: 28px;
+    transform: rotate(90deg);
+    display: flex;
+    gap: 0;
+}
+
+.mobile-menu {
+    position: absolute;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    bottom: 72px;
+    right: 0;
+    padding: 16px;
+    border-radius: 10px;
+    gap: 12px;
+}
+
 @media only screen and (max-width: 600px) {
     .footer-wrapper {
         padding: 20px;
