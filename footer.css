@@ -90,6 +90,10 @@ footer .social a {
         padding: 20px;
     }
 
+    footer {
+        padding: 16px;
+    }
+
     footer nav {
         display: none;
     }
