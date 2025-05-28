@@ -119,7 +119,8 @@ h6 {
     position: relative;
     width: 80vw;
     padding: 0 10vw;
-    padding-bottom: 300px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -148,8 +149,9 @@ h6 {
 #stickyScroll {
     background-image: url(images/scroll-image_01-min.png);
     background-repeat: no-repeat;
-    background-position: 90% 0%;
+    background-position: 90% 50%;
     background-size: 50%;
+    height: 33ch !important;
     overflow: hidden !important;
     transition: background-image 500ms linear 0s;
 }
