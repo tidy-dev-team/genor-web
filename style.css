@@ -200,11 +200,21 @@ details:open>summary {
     pointer-events: none;
 }
 
+.collapse {
+    max-height: 26px;
+    transition: max-height 300ms linear 0s;
+}
+
+.collapse:open {
+    max-height: 200px;
+}
+
 .collapse div {
     color: #929292;
     max-width: 420px;
     margin-top: 0;
     line-height: 1.2;
+    background-color: #191919;
 }
 
 .collapse div div {
