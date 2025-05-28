@@ -307,6 +307,7 @@ h1 {
 
 .bigger-p {
     font-size: 31px;
+    text-wrap: nowrap;
 }
 
 .bigger-h1 {
@@ -1113,6 +1114,10 @@ body:has(.popup.hide) #wrapper {
 
     .desktop-only {
         display: none;
+    }
+
+    .bigger-p {
+        text-wrap: balance !important;
     }
 
     /* #starDiv {
