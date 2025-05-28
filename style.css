@@ -1115,9 +1115,9 @@ body:has(.popup.hide) #wrapper {
         display: none;
     }
 
-    #starDiv {
+    /* #starDiv {
         display: none;
-    }
+    } */
 
     .cards-wrapper {
         gap: 24px

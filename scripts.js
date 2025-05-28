@@ -41,8 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const progress = Math.min(Math.max((start - rect.top) / (start - end), 0), 1);
 
         // console.log(`Scroll Progress: ${(progress * 100).toFixed(2)}%`);
-        if ((progress * 100) > 85) {
-            if (document.body.offsetWidth > 600) {
+        if (document.body.offsetWidth > 600) {
+            if ((progress * 100) > 85) {
+                starVideo.controls = false;
+                starDiv.style.backgroundSize = "400%";
+                setTimeout(() => {
+                    starVideo.play();
+                }, 700);
+            }
+        }else{
+            if ((progress * 100) > 50) {
                 starVideo.controls = false;
                 starDiv.style.backgroundSize = "400%";
                 setTimeout(() => {
