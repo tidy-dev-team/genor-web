@@ -97,6 +97,10 @@ h6 {
     color: #ffffff !important;
 }
 
+.h1-81 {
+    font-size: 81px;
+}
+
 .video {
     width: 100vw;
     height: auto;
@@ -290,6 +294,11 @@ h1 {
 .full-width {
     max-width: 1400px;
     width: 90vw;
+}
+
+.full-grow {
+    flex-grow: 1;
+    max-width: unset;
 }
 
 .left-align {
@@ -492,6 +501,10 @@ section.black.no-min-mobile {
 .grid-image {
     width: 50%;
     height: auto;
+}
+
+.size {
+    width: 1080px !important;
 }
 
 /* .grid h6 {
