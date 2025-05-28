@@ -196,9 +196,13 @@ details:open>summary {
     opacity: 1;
 }
 
+.collapse:open {
+    pointer-events: none;
+}
+
 .collapse div {
     color: #929292;
-    max-width: 340px;
+    max-width: 420px;
     margin-top: 0;
     line-height: 1.2;
 }
@@ -209,7 +213,7 @@ details:open>summary {
 
 .collapse div,
 .collapse h3 {
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .collapse h3 div {
