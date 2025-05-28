@@ -66,4 +66,8 @@ header a {
         width: 110px;
         height: 32px;
     }
+
+    header button {
+        transform: translateX(30px);
+    }
 }

@@ -85,15 +85,15 @@ footer .social a {
     font-size: 12px;
 }
 
-footer details {
+header details {
     color: #333333 !important;
 }
 
-footer summary {
+header summary {
     position: relative;
     color: #333333 !important;
     opacity: 1;
-    font-size: 28px;
+    font-size: 22px;
     transform: rotate(90deg);
     display: flex;
     gap: 0;
@@ -104,7 +104,7 @@ footer summary {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    bottom: 72px;
+    top: 84px;
     right: 0;
     padding: 16px;
     border-radius: 10px;

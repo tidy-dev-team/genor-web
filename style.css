@@ -71,7 +71,7 @@ section.black {
 
 h1 {
     letter-spacing: -1px;
-    font-size: 64px;
+    font-size: 93px;
     max-width: 1000px;
     text-wrap: balance;
     font-family: 'aeo-fono', sans-serif;
@@ -341,7 +341,7 @@ img.full-width {
 }
 
 .mt-2 {
-    margin-top: 2.75em;
+    margin-top: 1.8em;
 }
 
 .move-beyond {
